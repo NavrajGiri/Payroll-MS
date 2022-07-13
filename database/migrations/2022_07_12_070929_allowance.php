@@ -22,7 +22,7 @@ schema::create("allowance",function(Blueprint $table){
     $table->string(updated_at);
 
     $table->timestamps();
-    
+
 });
 }
 
