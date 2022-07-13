@@ -9,5 +9,5 @@ class allowance extends Model
 {
     use HasFactory;
     protected $table = "allowance";
-    protected $fillable = ["computer_no","rank","name","allowance_name","allowance_details","allowance_type","amout","method","total","issue_date","issue_by"];
+    protected $fillable = ["user_id","allowance_name","allowance_details","allowance_type","amount","total","issued_salary_id","issue_date",""];
 }

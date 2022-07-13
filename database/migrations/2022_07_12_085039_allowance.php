@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
     public function up(){
         Schema::create("allowance",function(Blueprint $table){
             $table->id();
@@ -15,13 +16,17 @@ return new class extends Migration
             $table->string('allowance_type');
             $table->string('amount');
             $table->string('total');
-            $table->string('issued_salary_id');
-            $table->dateTime('issue_date');
+            $table->string('issue_salary_id');
+            $table->string('issue_date');
+            $table->string('issue_by');
             $table->timestamps();
+
         });
     }
 
-    public function down(){
 
+    public function down()
+    {
+        //
     }
 };
