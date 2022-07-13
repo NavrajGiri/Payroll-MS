@@ -8,8 +8,7 @@ return new class extends Migration
 {
 
     public function up(){
-        Schema::create("users",function(Blueprint $table){
-            $table->id();
+        Schema::table("users",function(Blueprint $table){
             $table->string('computer_no');
             $table->string('rank');
             $table->string('date_of_birth');
@@ -25,9 +24,6 @@ return new class extends Migration
             $table->string('grade_id');
             $table->string('nagrik_lagani_kosh_no');
             $table->string('type');
-
-            $table->timestamps();
-
         });
     }
 
