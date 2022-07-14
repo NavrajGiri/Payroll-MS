@@ -11,10 +11,10 @@ class Allowance extends Model
     protected $table = "allowance";
     protected $fillable = ["user_id","allowance_name","allowance_details","allowance_type","amount","total","issued_salary_id","issue_date",""];
 
-    Function user(){
+    function user(){
         return $this->belongsTo(User::class);
     }
-    Function issuedsalary(){
+    function issuedsalary(){
         return $this->belongsTo(IssuedSalary::class);
     }
 }

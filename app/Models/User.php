@@ -66,8 +66,8 @@ class User extends Authenticatable
             return $this->hasMany(Bill::class);
         }
 
-        Function promotionhistory(){
-            return $this->belongsTo(PromotionHistory::class);
+        Function promotion(){
+            return $this->hasMany(PromotionHistory::class);
 
         }
 

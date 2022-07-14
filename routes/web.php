@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
+use App\Http\Livewire\UserDashboardLivewire;
+use App\Http\Livewire\UserPaymentLivewire;
+
+Route::get('/dashboard',UserDashboardLivewire::class);
+Route::get('/payments',UserPaymentLivewire::class);
+
 
 Route::get('/', function () {
     return view('welcome');
