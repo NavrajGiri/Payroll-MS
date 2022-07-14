@@ -11,7 +11,7 @@ class PromotionHistory extends Model
     protected $table = "promotion_history";
     protected $fillable = ["user_id","date","grade",];
 
-    Function user(){
+    function user(){
         return $this->belongsTo(user::class);
     }
 
