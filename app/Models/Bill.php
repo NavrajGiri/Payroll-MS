@@ -12,7 +12,7 @@ class Bill extends Model
     protected $fillable = ["bill_no","user_id","product_name","product_details","quantity","amount","issue_salary_id","total_amount"];
 
 
-    Function issuedsalary(){
+    function issuedsalary(){
         return $this->belongsTo(IssuedSalary::class);
     }
 
