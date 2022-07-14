@@ -10,4 +10,8 @@ class Rank extends Model
     use HasFactory;
     protected $table = "ranks";
     protected $fillable = ["name"];
+
+     Function grade(){
+        return $this->hasMany(grade::class);
+     }
 }

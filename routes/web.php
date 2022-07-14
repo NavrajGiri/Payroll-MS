@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-
+use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +19,4 @@ Route::middleware([
 });
 
 
+// user

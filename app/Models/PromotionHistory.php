@@ -10,4 +10,11 @@ class PromotionHistory extends Model
     use HasFactory;
     protected $table = "promotion_history";
     protected $fillable = ["user_id","date","grade",];
+
+    Function user(){
+        return $this->belongsTo(user::class);
+    }
+
+
+
 }

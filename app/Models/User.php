@@ -56,6 +56,23 @@ class User extends Authenticatable
      * @var array
      */
     protected $appends = [
-        'profile_photo_url',
-    ];
+        'profile_photo_url', ];
+
+        Function allowance(){
+            return $this->hasMany(Allowance::class);
+        }
+
+        Function bill(){
+            return $this->hasMany(Bill::class);
+        }
+
+        Function promotionhistory(){
+            return $this->belongsTo(PromotionHistory::class);
+
+        }
+
+        Function grade(){
+            return $this->belongsTo(Grade::class);
+        }
 }
+

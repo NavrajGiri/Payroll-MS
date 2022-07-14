@@ -10,4 +10,13 @@ class Bill extends Model
     use HasFactory;
     protected $table = "bills";
     protected $fillable = ["bill_no","user_id","product_name","product_details","quantity","amount","issue_salary_id","total_amount"];
+
+
+    Function issuedsalary(){
+        return $this->belongsTo(IssuedSalary::class);
+    }
+
+    function  user(){
+        return $this->belongsTo(user::class);
+    }
 }
