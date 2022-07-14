@@ -1,5 +1,5 @@
 <?php
-
+    //  admin
 use App\Http\Livewire\AdminAllowanceAddLivewire;
 use App\Http\Livewire\AdminAllowanceLivewire;
 use App\Http\Livewire\AdminBillEditLivewire;
@@ -10,6 +10,7 @@ use App\Http\Livewire\AdminRankLivewire;
 use App\Http\Livewire\AdminUserLivewire;
 use App\Http\Livewire\AdminUserEditLivewire;
 use App\Http\Livewire\AdminUserAddLivewire;
+
 use Illuminate\Support\Facades\Route;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 //    user
@@ -38,7 +39,6 @@ Route::get('rank',AdminRankLivewire::class);
 Route::get('rank/edit',AdminRankEditLivewire::class);
 Route::get('rank/add',AdminRankAddLivewire::class);
 Route::get('grade',AdminGradeLivewire::class);
-// Route::get('grade/add',AdminGradeAddLivewire::class);
 Route::get('admin/bill',AdminBillLivewire::class);
 Route::get('admin/bill/edit',AdminBillEditLivewire::class);
 Route::get('admin/allowance',AdminAllowanceLivewire::class);

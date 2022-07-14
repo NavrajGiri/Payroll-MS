@@ -11,7 +11,7 @@ class Rank extends Model
     protected $table = "ranks";
     protected $fillable = ["name"];
 
-     Function grade(){
+     function grade(){
         return $this->hasMany(grade::class);
      }
 }
