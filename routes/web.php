@@ -1,7 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
+
            //  admin
 use App\Http\Livewire\AdminAllowanceAddLivewire;
 use App\Http\Livewire\AdminAllowanceLivewire;
@@ -13,6 +12,10 @@ use App\Http\Livewire\AdminRankLivewire;
 use App\Http\Livewire\AdminUserLivewire;
 use App\Http\Livewire\AdminUserEditLivewire;
 use App\Http\Livewire\AdminUserAddLivewire;
+
+use Illuminate\Support\Facades\Route;
+use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
+
 //    user
 use App\Http\Livewire\UserDashboardLivewire;
 use App\Http\Livewire\UserPaymentLivewire;
@@ -58,4 +61,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//user
+
