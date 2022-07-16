@@ -2,11 +2,12 @@
 
 
            //  admin
+ use App\Http\Livewire\AdminAllowanceEditLivewire;
+use App\Http\Livewire\AdminIssuedSalaryLivewire;
 use App\Http\Livewire\AdminAllowanceAddLivewire;
 use App\Http\Livewire\AdminAllowanceLivewire;
 use App\Http\Livewire\AdminBillEditLivewire;
 use App\Http\Livewire\AdminBillLivewire;
-
 use App\Http\Livewire\AdminGradeLivewire;
 use App\Http\Livewire\AdminRankAddLivewire;
 use App\Http\Livewire\AdminRankEditLivewire;
@@ -36,25 +37,27 @@ Route::get('allowance/',UserAllowance::class);
 
     //    user
 
-// Route::get('/dashboard',UserDashboardLivewire::class);
+Route::get('/dashboard',UserDashboardLivewire::class);
 Route::get('/payments',UserPaymentLivewire::class)->name('user.payment');
 Route::get('/bill',UserBillLivewire::class)->name('user.bill');
 Route::get('/bill/add',UserBillAddLivewire::class)->name('user.bill.add');
 Route::get('/bill/edit/{bill_id}',UserBillEditLivewire::class)->name('user.bill.edit');
-Route::get('/allowance/',UserAllowance::class)->name('user.allowance');
+Route::get('/allowance',UserAllowance::class)->name('user.allowance');
 
 //    admin
 Route::get('admin/user/',AdminUserLivewire::class)->name('admin.user');
-Route::get('admin/user/edit',AdminUserEditLivewire::class);
-Route::get('admin/user/add',AdminUserAddLivewire::class);
+Route::get('admin/user/edit{user_id}',AdminUserEditLivewire::class)->name('admin.user.edit');
+Route::get('admin/user/add',AdminUserAddLivewire::class)->name('admin.user.add');;
 Route::get('admin/rank',AdminRankLivewire::class)->name('admin.rank');
-Route::get('admin/rank/edit',AdminRankEditLivewire::class);
-Route::get('admin/rank/add',AdminRankAddLivewire::class);
+Route::get('admin/rank/edit{rank_id}',AdminRankEditLivewire::class)->name('admin.rank.edit');
+Route::get('admin/rank/add',AdminRankAddLivewire::class)->name('admin.rank.add');
 Route::get('admin/grade',AdminGradeLivewire::class)->name('admin.grade');
-Route::get('admin/bill',AdminBillLivewire::class)->name('admin.bill');
-Route::get('admin/bill/edit',AdminBillEditLivewire::class);
+Route::get('admin/bill/{bill_id}',AdminBillLivewire::class)->name('admin.bill');
+Route::get('admin/bill/edit',AdminBillEditLivewire::class)->name('admin.bill.edit');
 Route::get('admin/allowance',AdminAllowanceLivewire::class)->name('admin.allowance');
-Route::get('admin/allowance/add',AdminAllowanceAddLivewire::class);
+Route::get('admin/allownace/edit{allowance_id}',AdminAllowanceEditLivewire::class)->name('admin.allowance.edit');
+Route::get('admin/allowance/add',AdminAllowanceAddLivewire::class)->name('admin.allowance.add');
+Route::get('admin/issued_salary{user_id}',AdminIssuedSalaryLivewire::class)->name('admin.issued.salary');
 
 
 
