@@ -20,31 +20,31 @@
                             </tr>
                         </thead>
                         <tbody class="text-gray-600 text-sm font-light">
-                            @foreach($all_bills as $bills)
+                            @foreach($all_bill as $bill)
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
-                                    {{$bills->id}}
+                                    {{$bill->id}}
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    {{$bills->bill_no}}
+                                    {{$bill->bill_no}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$bills->user_id}}
+                                    {{$bill->user_id}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$bills->product_name}}
+                                    {{$bill->product_name}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$bills->product_details}}
+                                    {{$bill->product_details}}
                                 </td> <td class="py-3 px-6 text-center">
-                                    {{$bills->quantity}}
+                                    {{$bill->quantity}}
                                 </td> <td class="py-3 px-6 text-center">
-                                    {{$bills->amount}}
+                                    {{$bill->amount}}
                                 </td> <td class="py-3 px-6 text-center">
-                                    {{$bills->issued_salary_id}}
+                                    {{$bill->issued_salary_id}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$bills->total_amount}}
+                                    {{$bill->total_amount}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     <div class="flex item-center justify-center">

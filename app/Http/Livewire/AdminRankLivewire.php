@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-use App\Models\Ranks;
+use App\Models\Rank;
 
 use Livewire\Component;
 
@@ -9,7 +9,7 @@ class AdminRankLivewire extends Component
 {
     public function render()
     {
-        $all_ranks = Ranks::all();
-        return view('livewire.admin-ranks-livewire',['all_ranks'=>$all_ranks]);
+        $all_rank = Rank::all();
+        return view('livewire.admin-rank-livewire',['all_rank'=>$all_rank]);
     }
 }
