@@ -9,7 +9,7 @@ class Allowance extends Model
 {
     use HasFactory;
     protected $table = "allowance";
-    protected $fillable = ["user_id","allowance_name","allowance_details","allowance_type","amount","total","issued_salary_id","issue_date",""];
+    protected $fillable = ["user_id","allowance_name","allowance_details","allowance_type","amount","total","issued_salary_id","issue_date",];
 
     function user(){
         return $this->belongsTo(User::class);

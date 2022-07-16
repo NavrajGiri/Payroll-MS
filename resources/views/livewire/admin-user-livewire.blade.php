@@ -9,7 +9,18 @@
                                 <th class="py-3 px-6 text-left">Name</th>
                                 <th class="py-3 px-6 text-left">Computer No.</th>
                                 <th class="py-3 px-6 text-center">Rank</th>
-                                <th class="py-3 px-6 text-center">Phone Number</th>
+                                <th class="py-3 px-6 text-center">DOB</th>
+                                <th class="py-3 px-6 text-center">Gender</th>
+                                <th class="py-3 px-6 text-center">Merital Status</th>
+                                <th class="py-3 px-6 text-center">Address</th>
+                                <th class="py-3 px-6 text-center">Phone No.</th>
+                                <th class="py-3 px-6 text-center">Joining Date</th>
+                                <th class="py-3 px-6 text-center">Blood Group</th>
+                                <th class="py-3 px-6 text-center">PAN No.</th>
+                                <th class="py-3 px-6 text-center">Bank Name.</th>
+                                <th class="py-3 px-6 text-center">Account No.</th>
+                                <th class="py-3 px-6 text-center">Grade ID</th>
+                                <th class="py-3 px-6 text-center">Nagarik Lagani Kosh No.</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
                         </thead>
@@ -26,7 +37,32 @@
                                     {{$user->rank}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
+                                    {{$user->date_of_birth}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->gender}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->merital_status}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->address}}
+                                </td><td class="py-3 px-6 text-center">
                                     {{$user->phone_no}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->joining_date}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->blood_group}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->pan_no}}
+                                </td><td class="py-3 px-6 text-center">
+                                    {{$user->bank_no}}
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    {{$user->account_no}}
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    {{$user->grade_id}}
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    {{$user->nagarik_lagani_kosh_no}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     <div class="flex item-center justify-center">

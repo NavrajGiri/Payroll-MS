@@ -1,3 +1,6 @@
 <div>
-    {{-- If your happiness depends on money, you will never be happy with yourself. --}}
-</div>
+    {{ <form action="">
+        Rank: <input type="text" name:"rank"><br> <br>
+        <input type="submit" name="done"> <br> <br>
+     </form> }}
+  </div>

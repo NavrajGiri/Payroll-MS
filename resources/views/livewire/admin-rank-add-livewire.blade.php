@@ -1,3 +1,6 @@
 <div>
-    {{-- The best athlete wants his opponent at his best. --}}
+    {{ <form action="">
+    Rank: <input type="text" name:"rank"><br> <br>
+    <input type="submit" name="done"> <br> <br>
+        </form> }}
 </div>

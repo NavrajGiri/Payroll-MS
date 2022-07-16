@@ -9,15 +9,15 @@ return new class extends Migration
     public function up(){
         Schema::create("allowance",function(Blueprint $table){
             $table->id();
-            $table->string('user_id');
-            $table->string('allowance_name');
-            $table->string('allowance_details');
-            $table->string('allowance_type');
-            $table->string('amount');
-            $table->string('total');
-            $table->string('issued_salary_id');
-            $table->dateTime('issue_date');
-            $table->timestamps();
+            $table->string('user_id')->nullable();
+            $table->string('allowance_name')->nullable();
+            $table->string('allowance_details')->nullable();
+            $table->string('allowance_type')->nullable();
+            $table->string('amount')->nullable();
+            $table->string('total')->nullable();
+            $table->string('issued_salary_id')->nullable();
+            $table->dateTime('issue_date')->nullable();
+            $table->timestamps()->nullable();
         });
     }
 
