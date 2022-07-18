@@ -7,7 +7,7 @@
                 Rank: <input type="text" name="rank"><br><br>
                 Dob: <input type="date" name="dob"><br><br>
                 Gender: <input type="text" name="gender"><br><br>
-                merital_status: <input type="text" name="merital_status"><br><br>
+                Merital_status: <input type="text" name="merital_status"><br><br>
                 Address: <input type="text" name="Address"><br><br>
                 Phone_No: <input type="number" name="Phone_no"><br><br>
                 Joining_Date: <input type="date" name="joining_date"><br><br>

@@ -31,7 +31,7 @@ Route::get('/dashboard',UserDashboardLivewire::class);
 Route::get('/payments',UserPaymentLivewire::class);
 Route::get('/bill',UserBillLivewire::class);
 Route::get('bill/add',UserBillAddLivewire::class);
-Route::get('bil/edit',UserBillEditLivewire::class);
+Route::get('bill/edit',UserBillEditLivewire::class);
 Route::get('allowance/',UserAllowance::class);
 
 
@@ -47,7 +47,7 @@ Route::get('/allowance',UserAllowance::class)->name('user.allowance');
 //    admin
 Route::get('admin/user/',AdminUserLivewire::class)->name('admin.user');
 Route::get('admin/user/edit{user_id}',AdminUserEditLivewire::class)->name('admin.user.edit');
-Route::get('admin/user/add',AdminUserAddLivewire::class)->name('admin.user.add');;
+Route::get('admin/user/add',AdminUserAddLivewire::class)->name('admin.user.add');
 Route::get('admin/rank',AdminRankLivewire::class)->name('admin.rank');
 Route::get('admin/rank/edit{rank_id}',AdminRankEditLivewire::class)->name('admin.rank.edit');
 Route::get('admin/rank/add',AdminRankAddLivewire::class)->name('admin.rank.add');
