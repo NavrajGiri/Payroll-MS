@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Grade extends Model
 {
     use HasFactory;
-    protected $table = "grades";
+    protected $table = "grade";
     protected $fillable =["rank_id","grade_name","salary_amount",];
 
     function rank(){

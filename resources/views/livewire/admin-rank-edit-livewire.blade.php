@@ -1,4 +1,4 @@
 <div>
-        Rank: <input type="text" name:"rank"><br> <br>
-        <input type="submit" name="done"> <br> <br>
+        Rank: <input type="text" wire:model="name"><br> <br>
+        <input type="button" value="Update" wire:click="save()" name="done"> <br> <br>
   </div>
