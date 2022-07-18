@@ -15,7 +15,6 @@
                                 <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">User ID.</th>
                                 <th class="py-3 px-6 text-center">Allowance Name</th>
-                                <th class="py-3 px-6 text-center">Allowance Details</th>
                                 <th class="py-3 px-6 text-center">Allowance Type</th>
                                 <th class="py-3 px-6 text-center">Amount</th>
                                 <th class="py-3 px-6 text-center">Total </th>

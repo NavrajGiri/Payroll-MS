@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('total')->nullable();
             $table->string('issued_salary_id')->nullable();
             $table->dateTime('issue_date')->nullable();
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 
