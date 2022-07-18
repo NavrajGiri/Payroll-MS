@@ -1,4 +1,6 @@
 <div>
+
+    </x-slot>
     <div class="overflow-x-auto">
         <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
             <div class="w-full lg:w-5/6">
@@ -28,7 +30,7 @@
                                 <td class="py-3 px-6 text-center">
                                     {{$grade->salary_amount}}
                                 </td>
-                               
+
                                 <td class="py-3 px-6 text-center">
                                     <div class="flex item-center justify-center">
                                         <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
