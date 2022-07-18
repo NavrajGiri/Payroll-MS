@@ -22,6 +22,7 @@ class AdminAllowanceAddLivewire extends Component
         $allowance->issue_date = $this->issue_date;
         $allowance->issue_by = $this->issue_by;
 
+        
         $allowance->save();
 
         return redirect(route('admin.allowance'));    

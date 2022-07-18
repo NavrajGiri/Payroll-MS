@@ -12,7 +12,6 @@ class AdminBillLivewire extends Component
 
         $all_bill = Bill::all();
         return view('livewire.admin-bill-livewire',['all_bills'=>$all_bill]);
-        $all_bill = Bills::all();
-        return view('livewire.admin-bill-livewire',['all_bills'=>$all_bills]);
+       
     }
 }

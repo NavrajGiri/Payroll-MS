@@ -9,7 +9,7 @@
         Issued_Salary_id: <input type="number" wire:model="issued_salary_id"><br><br>
         Issue_Date: <input type="date" wire:model="issue_date"><br><br>
         Issue_By: <input type="date" wire:model="issue_by"><br><br>
-        <input type="button" wire:click ='save()' value="save!" name="done"><br><br>
+        <input type="button"  wire:click ='save()' value="save!" name="done"><br><br>
        </center>
 
 
