@@ -1,7 +1,5 @@
 <div>
-    {{
-        <center>
-            <form action="">
+     <center>
                 Name: <input type="text" name="name"><br><br>
                 Computer_No: <input type="number" name="computer_no"><br><br>
                 Rank: <input type="text" name="rank"><br><br>
@@ -19,5 +17,4 @@
                 nagarik_lagani_kosh_No: <input type="number" name="nagarik_lagani_kosh_no"><br><br>
                 <input type="submit" name="done"><br><br>
         </center>
-    }}
 </div>
