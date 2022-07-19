@@ -14,6 +14,7 @@ return new class extends Migration
         $table->string('date');
         $table->string('note');
         $table->string('amount');
+        $table->string('method');
         $table->string('issued_by');
         $table->timestamps();
 
