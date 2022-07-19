@@ -1,5 +1,10 @@
 <div>
-
+<x-slot name="header">
+        <div class="flex justify-between items-center">
+            <div>Bill</div>
+            <div><a href="{{route('admin.bill.edit')}}" class="underline">Add New Bill</a></div>
+        </div>
+    </x-slot>
     <div class="overflow-x-auto">
         <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
             <div class="w-full lg:w-5/6">
@@ -16,12 +21,11 @@
                                 <th class="py-3 px-6 text-center">Amount </th>
                                 <th class="py-3 px-6 text-center">Issued Salary ID</th>
                                 <th class="py-3 px-6 text-center">Total Amount</th>
-
                                 <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
                         </thead>
                         <tbody class="text-gray-600 text-sm font-light">
-                            @foreach($all_bill as $bill)
+                            @foreach($all_bill as $bills)
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
                                     {{$bill->id}}

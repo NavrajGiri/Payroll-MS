@@ -1,4 +1,10 @@
 <div>
+    <x-slot name="header">
+        <div class="flex justify-between items-center">
+            <div>Allowance</div>
+            <div><a href="{{route('admin.allowance.add')}}" class="underline">Add New Allowance</a></div>
+        </div>
+    </x-slot>
     <div class="overflow-x-auto">
         <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
             <div class="w-full lg:w-5/6">
@@ -9,7 +15,6 @@
                                 <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">User ID.</th>
                                 <th class="py-3 px-6 text-center">Allowance Name</th>
-                                <th class="py-3 px-6 text-center">Allowance Details</th>
                                 <th class="py-3 px-6 text-center">Allowance Type</th>
                                 <th class="py-3 px-6 text-center">Amount</th>
                                 <th class="py-3 px-6 text-center">Total </th>
