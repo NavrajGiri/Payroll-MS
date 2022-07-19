@@ -1,4 +1,11 @@
 <div>
+    <x-slot name="header">
+        <div class="flex justify-between items-center">
+            <div>User</div>
+            <div><a href="{{route('admin.user.add')}}" class="underline">Add New User</a></div>
+        </div>
+    </x-slot>
+    </x-slot>
     <div class="overflow-x-auto">
         <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
             <div class="w-full lg:w-5/6">
