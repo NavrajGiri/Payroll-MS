@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Models\Allowance;
 use Livewire\Component;
 
 class AdminAllowanceAddLivewire extends Component
@@ -9,7 +9,7 @@ class AdminAllowanceAddLivewire extends Component
 
     public $user_id,$allowance_name,$allowance_details,$allowance_type,$amount,$total,$issue_salary_id,$issue_date,$issue_by;
 
-    
+
     public function save(){
         $allowance = new Allowance();
         $allowance->user_id = $this->user_id;
@@ -22,10 +22,10 @@ class AdminAllowanceAddLivewire extends Component
         $allowance->issue_date = $this->issue_date;
         $allowance->issue_by = $this->issue_by;
 
-        
+
         $allowance->save();
 
-        return redirect(route('admin.allowance'));    
+        return redirect(route('admin.allowance'));
     }
 
     public function render()
