@@ -9,7 +9,7 @@
             Amount: <input type="number" name="amount"><br><br>
             Issue_Salary_id: <input type="number" name="issued_salary_id"><br><br>
             Total_Amount: <input type="number" name="total_amount"><br><br>
-            <input type="submit" name="done"><br><br>
+            <input type="button" value="update" name='save()' value="save!"><br><br>
     </center>
 
 </div>

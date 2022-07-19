@@ -13,6 +13,9 @@
 
 
 <div>
+
+
+
     <div class="overflow-x-auto">
         <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
             <div class="w-full lg:w-5/6">
@@ -35,24 +38,24 @@
                             @foreach($all_issue_salary as $issue_salary)
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
-                                    {{$issue_salary->id}}
+                                    {{$issue-salary->id}}
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    {{$issue_salary->user_id}}
+                                    {{$issue-salary->user_id}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$issue_salary->date}}
+                                    {{$issue-salary->date}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$issue_salary->note}}
+                                    {{$issue-salary->note}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$issue_salary->amount}}
+                                    {{$issue-salary->amount}}
                                 </td> <td class="py-3 px-6 text-center">
-                                    {{$issue_salary->method}}
+                                    {{$issue-salary->method}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$issue_salary->issued_by}}
+                                    {{$issue-salary->issued_by}}
                                 </td>
                                
                                 <td class="py-3 px-6 text-center">
