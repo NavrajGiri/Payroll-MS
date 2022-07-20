@@ -11,17 +11,10 @@
                 Joining_Date: <input type="date" wire:model="joining_date"><br><br>
                 blood_Group: <input type="text" wire:model="blood_group"><br><br>
                 Pan_No: <input type="number" wire:model="pan_no"><br><br>
-<<<<<<< HEAD
-                Bank_Name: <input type="text" wire:model="bank_name"><br><br>
-                Account_NO: <input type="number" wire:model="account_no"><br><br>
-                Grade_Id: <input type="number" wire:model="grade_id"><br><br>
-                Nagarik_lagani_kosh_No: <input type="number" wire:model="nagrik_lagani_kosh_no"><br><br>
-=======
                 Bank_Name: <input type="text" wire:model="bank_no"><br><br>
                 Acount_NO: <input type="number" wire:model="account_no"><br><br>
                 Grade_Id: <input type="number" wire:model="grade_id"><br><br>
                 nagrik_lagani_kosh_No: <input type="number" wire:model="nagrik_lagani_kosh_no"><br><br>
->>>>>>> 28826e5d6bcd871ba704f40286925c557ab34b93
                 <input type="button" value="update" wire:click='save()' value="save!"><br><br>
         </center>
 </div>

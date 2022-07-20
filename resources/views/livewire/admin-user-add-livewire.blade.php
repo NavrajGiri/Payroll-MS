@@ -4,6 +4,8 @@
                     Name: <input type="text" wire:model="name"><br><br>
                     Computer_No: <input type="number" wire:model="computer_no"><br><br>
                     Rank: <input type="text" wire:model="rank"><br><br>
+                    
+</select><br><br>
                     Dob: <input type="date" wire:model="date_of_birth"><br><br>
                     Gender: <input type="text" wire:model="gender"><br><br>
                     Merital_status: <input type="text" wire:model="merital_status"><br><br>
