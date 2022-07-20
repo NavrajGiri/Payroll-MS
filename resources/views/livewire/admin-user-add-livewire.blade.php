@@ -27,97 +27,116 @@
 
  <div class="col-lg-6 w-full max-w-xs">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="name">
-          Name
-        </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="name">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            Name
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="name" id="name" type="text" placeholder="name">
 
-      </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            Email
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="email" id="email" type="text" placeholder="email">
+
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            Password
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="password" id="password" type="text" placeholder="password">
+
+        </div>
       <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="computer_no">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Computer No
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="computer_no" type="text" placeholder="computer no ">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="computer_no" id="computer_no" type="text" placeholder="computer no ">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="rank">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
         Rank
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="rank" type="text" placeholder="rank">
-
-      </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="date_of_birth">
+        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
+            <option>Please select Rank</option>
+            @foreach ($all_ranks as $rank)
+                <option value="{{$rank->id}}">{{$rank->name}}</option>
+            @endforeach
+        </select>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Dob
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="date_of_birth" type="text" placeholder="date of birth">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="date_of_birth" id="date_of_birth" type="text" placeholder="date of birth">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="gender">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Gender
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="gender" type="text" placeholder="gender">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="gender" id="gender" type="text" placeholder="gender">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="merital_status">
+        <label class="block text-gray-700 text-sm font-bold mb-2" >
           Merital Status
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="merital_status" type="text" placeholder="merital_status">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="merital_status" id="merital_status" type="text" placeholder="merital_status">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="address">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Address
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="address">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="address" id="address" type="text" placeholder="address">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="phone_no">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Phone NO
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone_no" type="text" placeholder="phone no">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="phone_no" id="phone_no" type="text" placeholder="phone no">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="joining_date">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Joining Date
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="joining_date" type="text" placeholder="joining date">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="joining_date" id="joining_date" type="text" placeholder="joining date">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="blood_group">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Blood Group
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="blood_group" type="text" placeholder="blood group">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="blood_group" id="blood_group" type="text" placeholder="blood group">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="pan_no">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Pan NO
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pan_no" type="text" placeholder="pan no">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="pan_no" id="pan_no" type="text" placeholder="pan no">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="bank_name">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Bank Name
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="bank_name" type="text" placeholder="bank name">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="bank_name" wire:model="bank_no" type="text" placeholder="bank name">
 
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="account_no">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Account N0
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="account_no" type="text" placeholder="account no">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="account_no" id="account_no" type="text" placeholder="account no">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="grade_id">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
           Grade Id
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="grade_id" type="text" placeholder="grade id">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_id" id="grade_id" type="text" placeholder="grade id">
 
       </div><div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" wire:model="nagrik_lagani_kosh_no">
+        <label class="block text-gray-700 text-sm font-bold mb-2" >
           Nagrik lagani kosh NO
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="name">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="nagrik_lagani_kosh_no" id="name" type="text" placeholder="name">
 
       </div>
 

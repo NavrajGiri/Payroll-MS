@@ -3,7 +3,7 @@
         User_Id: <input type="number" wire:model="user_id"><br><br>
         Allowance_Name: <input type="text" wire:model="allowance_name"><br><br>
         Allowance_Details: <input type="text" wire:model="allowance_details"><br><br>
-        Allowance_Type: <select class="form-control" name="allowance_type">
+        Allowance_Type: <select class="form-control" wire:model="allowance_type">
             <option value="">credit</option>
             <option value="">debit</option></select><br><br>
         Amount: <input type="number" wire:model="amount"><br><br>

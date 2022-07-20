@@ -6,11 +6,11 @@ use Livewire\Component;
 
 class AdminGradeAddLivewire extends Component
 {
-    public $grade_id,$rank_id,$grade_name,$salary_amount;
+    public $rank_id,$grade_name,$salary_amount;
      function save(){
         $grade = new Grade();
         $grade->rank_id = $this->rank_id;
-        $grade->grade_id = $this->grade_name;
+        $grade->grade_name = $this->grade_name;
         $grade->salary_amount = $this->salary_amount;
         $grade->save();
 

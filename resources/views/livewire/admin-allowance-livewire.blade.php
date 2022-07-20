@@ -55,7 +55,7 @@
                                 </td> <td class="py-3 px-6 text-center">
                                     {{$allowance->total}}
                                 </td> <td class="py-3 px-6 text-center">
-                                    {{$allowance->issue_salary_id}}
+                                    {{$allowance->issued_salary_id}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$allowance->issue_date}}

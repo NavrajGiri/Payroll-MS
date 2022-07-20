@@ -6,7 +6,7 @@
             Product_Details: <input type="text" wire:model="product_details"><br><br>
             Quantity: <input type="text" wire:model="quantity"><br><br>
             Amount: <input type="number" wire:model="amount"><br><br>
-            Issue_Salary_id: <input type="number" wire:model="issued_salary_id"><br><br>
+            issued_salary_id: <input type="number" wire:model="issued_salary_id"><br><br>
             Total_Amount: <input type="number" wire:model="total_amount"><br><br>
             <input type="button" value="update" wire:click='save()' name="done"><br><br>
 
