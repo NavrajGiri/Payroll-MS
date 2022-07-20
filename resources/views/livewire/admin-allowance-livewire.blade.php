@@ -8,7 +8,7 @@
 
         </div>
 
-        
+
     </x-slot>
     <div class="overflow-x-auto">
         <div class="flex">
@@ -38,7 +38,7 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     {{$allowance->user_id}}
-                                </td>
+                                                    </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$allowance->allowance_name}}
                                 </td>
@@ -47,6 +47,9 @@
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$allowance->allowance_type}}
+
+
+
                                 </td> <td class="py-3 px-6 text-center">
                                     {{$allowance->amount}}
                                 </td> <td class="py-3 px-6 text-center">

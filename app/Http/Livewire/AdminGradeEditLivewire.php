@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class AdminGradeEditLivewire extends Component
 {
-    public $rank_id, $salary_amount;
+    public $grade_id,$rank_id, $salary_amount;
      function mount($grade_id){
         $this->grade_id = $grade_id;
         $grade = Grade::find($grade_id);
