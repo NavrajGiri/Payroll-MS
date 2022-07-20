@@ -23,7 +23,7 @@ class AdminBillEditLivewire extends Component
     }
 
         public function save(){
-            $bill = new Bill();
+    $bill = new Bill();
     $bill->bill_id = $this->bill_id;
     $bill->bill_no = $bill->bill_no;
     $bill->user_id = $bill->user_id;
