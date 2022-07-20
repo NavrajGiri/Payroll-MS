@@ -18,7 +18,7 @@ class UserBillEditLivewire extends Component
             $this->product_details = $bill->product_details;
             $this->quantity = $bill ->quantity;
             $this->amount = $bill ->amount;
-            $this->issue_salary_id = $bill->issue_salary_id;
+            $this->issued_salary_id = $bill->issued_salary_id;
             $this->total_amount = $bill->total_amount;
 
         }

@@ -27,6 +27,19 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'computer_no',
+        'rank',
+        'date_of_birth',
+        'gender',
+        'merital_status',
+        'address',
+        'phone_no',
+        'joining_date',
+        'blood_group',
+        'pan_no',
+        'account_no',
+        'grade_id',
+        'nagrik_lagani_kosh_no'
     ];
 
     /**
