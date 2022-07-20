@@ -6,12 +6,14 @@ use Livewire\Component;
 
 class AdminUserEditLivewire extends Component
 {
-    public $user_id,$computer_no,$date_of_birth,$gender,$merital_status,$address,$phone_no,$joining_date,$blood_group,$pan_no,$bank_name,$account_no,$grade_id,$nagarik_lagani_kosh_no;
+    public $user_id,$name,$computer_no,$rank,$date_of_birth,$gender,$merital_status,$address,$phone_no,$joining_date,$blood_group,$pan_no,$bank_name,$account_no,$grade_id,$nagrik_lagani_kosh_no;
 
     public function mount($user_id){
         $this->user_id = $user_id;
         $user = User::find($user_id);
+        $this->name = $user->name;
         $this->computer_no = $user->computer_no;
+        $this->rank = $user->rank;
         $this->date_of_birth = $user->date_of_birth;
         $this->gender = $user->gender;
         $this->merital_status = $user->merital_status;
@@ -22,14 +24,16 @@ class AdminUserEditLivewire extends Component
         $this->pan_no = $user->pan_no;
         $this->account_no = $user->account_no;
         $this->grade_id = $user->grade_id;
-        $this->nagarik_lagani_kosh_no= $user->nagarik_lagani_kosh_no;
+        $this->nagrik_lagani_kosh_no= $user->nagrik_lagani_kosh_no;
 
     }
 
     public function save(){
         $user = new User();
         $user->user_id = $this->user_id;
+        $user->name = $user->name;
         $user->computer_no = $user->computer_no;
+        $user->rank = $user->rank;
         $user->date_of_birth = $user->date_of_birth;
         $user->gender = $user->gender;
         $user->merital_status = $user->merital_status;
@@ -40,7 +44,7 @@ class AdminUserEditLivewire extends Component
         $user->pan_no = $user->pan_no;
         $user->account_no = $user->account_no;
         $user->grade_id = $user->grade_id;
-        $user->nagarik_lagani_kosh_no= $user->nagarik_lagani_kosh_no;
+        $user->nagrik_lagani_kosh_no= $user->nagrik_lagani_kosh_no;
 
         $user->save();
         return redirect(route('admin.user'));

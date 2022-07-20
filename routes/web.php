@@ -9,6 +9,8 @@ use App\Http\Livewire\AdminAllowanceLivewire;
 use App\Http\Livewire\AdminBillEditLivewire;
 use App\Http\Livewire\AdminBillLivewire;
 use App\Http\Livewire\AdminGradeLivewire;
+use App\Http\Livewire\AdminGradeEditLivewire;
+use App\Http\Livewire\AdminGradeAddLivewire;
 use App\Http\Livewire\AdminRankAddLivewire;
 use App\Http\Livewire\AdminRankEditLivewire;
 use App\Http\Livewire\AdminRankLivewire;
@@ -51,9 +53,8 @@ Route::get('admin/user/add',AdminUserAddLivewire::class)->name('admin.user.add')
 Route::get('admin/rank',AdminRankLivewire::class)->name('admin.rank');
 Route::get('admin/rank/edit/{rank_id}',AdminRankEditLivewire::class)->name('admin.rank.edit');
 Route::get('admin/rank/add',AdminRankAddLivewire::class)->name('admin.rank.add');
-Route::get('admin/grade/add',AdminRankAddLivewire::class)->name('admin.grade.add');
-Route::get('admin/grade/edit',AdminRankAddLivewire::class)->name('admin.grade.add');
-
+Route::get('admin/grade/add',AdminGradeAddLivewire::class)->name('admin.grade.add');
+Route::get('admin/grade/edit/{grade/id}',AdminGradeAddLivewire::class)->name('admin.grade.edit');
 Route::get('admin/grade',AdminGradeLivewire::class)->name('admin.grade');
 Route::get('admin/bill/',AdminBillLivewire::class)->name('admin.bill');
 Route::get('admin/bill/edit/{bill_id}',AdminBillEditLivewire::class)->name('admin.bill.edit');
