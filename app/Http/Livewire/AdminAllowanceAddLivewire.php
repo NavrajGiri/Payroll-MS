@@ -7,7 +7,7 @@ use Livewire\Component;
 class AdminAllowanceAddLivewire extends Component
 {
 
-    public $user_id,$allowance_name,$allowance_details,$allowance_type,$amount,$total,$issue_salary_id,$issue_date,$issue_by;
+    public $user_id,$allowance_name,$allowance_details,$allowance_type,$amount,$total,$issued_salary_id,$issue_date;
 
 
     public function save(){
@@ -15,12 +15,11 @@ class AdminAllowanceAddLivewire extends Component
         $allowance->user_id = $this->user_id;
         $allowance->allowance_name = $this->allowance_name;
         $allowance->allowance_details = $this->allowance_details;
-        $allowance->allowance_type = $this->allowanc_type;
+        $allowance->allowance_type = $this->allowance_type;
         $allowance->amount = $this->amount;
         $allowance->total = $this->total;
         $allowance->issued_salary_id = $this->issued_salary_id;
         $allowance->issue_date = $this->issue_date;
-        $allowance->issue_by = $this->issue_by;
 
 
         $allowance->save();

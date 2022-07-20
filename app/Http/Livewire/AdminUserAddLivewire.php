@@ -11,7 +11,9 @@ class AdminUserAddLivewire extends Component
     public function save(){
         $user = new User();
         $user->user_id = $this->user_id;
+        $user->name = $this->name;
         $user->computer_no = $user->computer_no;
+        $user->rank = $this->rank;
         $user->date_of_birth = $user->date_of_birth;
         $user->gender = $user->gender;
         $user->merital_status = $user->merital_status;
