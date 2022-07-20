@@ -1,3 +1,8 @@
 <div>
-    {{-- Do your work, then step back. --}}
+      <center>
+           rank: <input type="text" wire:model="rank_id"><br><br>
+           grade_name: <input type="text" wire:model="grade_name"><br><br>
+           salary_amount: <input type="number" wire:model="salary_amount"><br><br>
+           <input type="button" value="update" wire:click="save()" name="done"><br><br>
+      </center>
 </div>
