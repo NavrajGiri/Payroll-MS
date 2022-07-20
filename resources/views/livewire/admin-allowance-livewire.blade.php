@@ -7,6 +7,8 @@
         </a></div>
 
         </div>
+
+        
     </x-slot>
     <div class="overflow-x-auto">
         <div class="flex">
