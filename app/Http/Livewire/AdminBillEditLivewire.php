@@ -36,13 +36,13 @@ class AdminBillEditLivewire extends Component
     $bill->save();
 
 
-}
+
+        }
 
         public function render()
         {
             return view('livewire.admin-bill-edit-livewire');
         }
+
     }
-
-
 
