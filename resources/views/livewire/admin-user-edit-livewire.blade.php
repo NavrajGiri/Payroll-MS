@@ -1,4 +1,4 @@
-<div>
+{{-- <div>
         <center>
                 Name: <input type="text" wire:model="name"><br><br>
                 Computer_No: <input type="number" wire:model="computer_no"><br><br>
@@ -17,9 +17,9 @@
                 nagrik_lagani_kosh_No: <input type="number" wire:model="nagrik_lagani_kosh_no"><br><br>
                 <input type="button" value="update" wire:click='save()' value="save!"><br><br>
         </center>
-</div>
-
-{{-- <div class="col-lg-6 w-full max-w-xl">
+</div> --}}
+<center>
+    <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -52,12 +52,8 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
         Rank
         </label>
-        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
-            <option>Please select Rank</option>
-            @foreach ($all_ranks as $rank)
-                <option value="{{$rank->id}}">{{$rank->name}}</option>
-            @endforeach
-        </select>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
+
       </div>
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -143,4 +139,4 @@
     </form>
 
   </div>
-</center> --}}
+</center>

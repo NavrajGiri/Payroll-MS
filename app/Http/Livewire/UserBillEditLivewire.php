@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Models\Bill;
 use Livewire\Component;
 
 class UserBillEditLivewire extends Component
@@ -24,8 +24,7 @@ class UserBillEditLivewire extends Component
         }
 
             public function save(){
-                $bill = new Bill();
-        $bill->bill_id = $this->bill_id;
+                $bill = Bill::find($this->bill_id);
         $bill->bill_no = $bill->bill_no;
         $bill->user_id = $bill->user_id;
         $bill->product_name = $bill ->product_name;
@@ -35,6 +34,7 @@ class UserBillEditLivewire extends Component
         $bill->issued_salary_id = $bill ->issued_salary_id;
         $bill->total_amount = $bill->total_amount;
         $bill->save();
+
         return redirect(route('admin.bill'));
 
             }

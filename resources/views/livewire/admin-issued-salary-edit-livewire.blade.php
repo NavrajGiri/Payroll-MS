@@ -6,7 +6,7 @@
            Issued_By: <input type="issued_by"><br><br>
            <input type="button" value="update" wire:click='save()' value="save!">
 
-</div> 
+</div>
 
 
 
