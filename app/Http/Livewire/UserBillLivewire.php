@@ -10,6 +10,7 @@ class UserBillLivewire extends Component
 
     public function render()
     {
-        return view('livewire.user-bill-livewire');
+        $all_bill = Bill::all();
+        return view('livewire.user-bill-livewire',['all_bills'=>$all_bill]);
     }
 }

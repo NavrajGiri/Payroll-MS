@@ -4,7 +4,7 @@
                     Name: <input type="text" wire:model="name"><br><br>
                     Computer_No: <input type="number" wire:model="computer_no"><br><br>
                     Rank: <input type="text" wire:model="rank"><br><br>
-                    
+
 </select><br><br>
                     Dob: <input type="date" wire:model="date_of_birth"><br><br>
                     Gender: <input type="text" wire:model="gender"><br><br>
@@ -27,7 +27,10 @@
  <center>
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 327d51edc42f865b900fe158af5a58ff9dca8c0e
  <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
  <div class="col-lg-6 w-full max-w-xs">

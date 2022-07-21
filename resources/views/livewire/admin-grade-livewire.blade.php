@@ -11,7 +11,7 @@
     <div class="overflow-x-auto">
         <div class="flex">
             <div class="w-full lg:w-5/6">
-                <div class="bg-white shadow-md rounded my-6">
+                <div class="bg-secondary shadow-md rounded my-6">
                     <table class="min-w-max w-full table-auto">
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">

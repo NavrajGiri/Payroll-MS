@@ -18,8 +18,8 @@ use App\Http\Livewire\AdminUserLivewire;
 use App\Http\Livewire\AdminUserEditLivewire;
 use App\Http\Livewire\AdminUserAddLivewire;
 use App\Http\Livewire\AdminIssuedSalaryLivewire;
-use App\Http\Livewire\AdminIssuedSalaryEditLivewire;
 use App\Http\Livewire\AdminIssuedSalaryAddLivewire;
+use App\Http\Livewire\AdminIssuedSalaryEditLivewire;
 
 use Illuminate\Support\Facades\Route;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;

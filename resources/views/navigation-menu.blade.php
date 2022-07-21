@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                        <img src="{{ asset('image/sts logo.jpg') }}" class="rounded h-14 w-auto" >
                     </a>
                 </div>
 
@@ -32,12 +32,18 @@
                         {{ __('Allowances') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('admin.issuedsalary') }}">
+<<<<<<< HEAD
+                        {{ __('Issuedsalary') }}
+                    </x-jet-nav-link>
+=======
                         {{ __('Issued Salary') }}
                         </x-jet-nav-link>
+>>>>>>> 327d51edc42f865b900fe158af5a58ff9dca8c0e
                     <x-jet-nav-link href="{{ route('user.bill') }}">
                         {{ __('UserBill') }}
                     </x-jet-nav-link>
 
+                    {{-- <img src="{{ asset('image/sts logo.jpg') }}" class="rounded h-14 w-auto" > --}}
 
                 </div>
             </div>
