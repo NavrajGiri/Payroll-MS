@@ -8,6 +8,6 @@
                 Amount: <input type="number" wire:model="amount"><br><br>
                 issued_salary_id: <input type="number" wire:model="issued_salary_id"><br><br>
                 Total_Amount: <input type="number" wire:model="total_amount"><br><br>
-                <input type="button" value="update" wire:click='save()' name="done"><br><br>
+                <input type="button"  wire:click='save()' value='save!' name="done"><br><br>
         </center>
 </div>

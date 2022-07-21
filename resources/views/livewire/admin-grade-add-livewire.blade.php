@@ -1,19 +1,27 @@
 <center>
 <div class="col-lg-6 w-full max-w-xl">
-    <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
+    <form class= "bg-secondary shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Rank id
           </label>
+<<<<<<< HEAD
           <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="allowance_name" id="allowance_name" type="text" placeholder="Allowance_name">
 
+=======
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
+>>>>>>> 940cb8ff4fdd7fe7faab57db59d3338094811913
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Grade ID
           </label>
+<<<<<<< HEAD
           <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="allowance_name" id="allowance_name" type="text" placeholder="Allowance_name">
 
+=======
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
+>>>>>>> 940cb8ff4fdd7fe7faab57db59d3338094811913
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">

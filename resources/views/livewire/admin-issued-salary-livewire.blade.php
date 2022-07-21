@@ -21,8 +21,6 @@
                                 <th class="py-3 px-6 text-center">Note</th>
                                 <th class="py-3 px-6 text-center">Amount</th>
                                 <th class="py-3 px-6 text-center">Issued By</th>
-
-
                                  <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
                         </thead>
@@ -34,9 +32,6 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     {{$issuedsalary->user_id}}
-                                </td>
-                                <td class="py-3 px-6 text-center">
-                                    {{$issuedsalary->grade_name}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$issuedsalary->date}}
@@ -52,7 +47,7 @@
 
                                 <td class="py-3 px-6 text-center">
                                     <div class="flex item-center justify-center">
-                                        <a href="{{route('admin.issuedsalaey.edit',$grade->id)}}">
+                                        <a href="{{route('admin.issuedsalaey.edit',$issuedsalary->id)}}">
                                         <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />

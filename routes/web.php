@@ -17,13 +17,9 @@ use App\Http\Livewire\AdminRankLivewire;
 use App\Http\Livewire\AdminUserLivewire;
 use App\Http\Livewire\AdminUserEditLivewire;
 use App\Http\Livewire\AdminUserAddLivewire;
-
-
+use App\Http\Livewire\AdminIssuedSalaryLivewire;
 use App\Http\Livewire\AdminIssuedSalaryAddLivewire;
 use App\Http\Livewire\AdminIssuedSalaryEditLivewire;
-use App\Http\Livewire\AdminIssuedSalaryLivewire;
-
-
 use Illuminate\Support\Facades\Route;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 
@@ -69,10 +65,10 @@ Route::get('admin/allownace/edit/{allowance_id}',AdminAllowanceEditLivewire::cla
 Route::get('admin/allowance/add',AdminAllowanceAddLivewire::class)->name('admin.allowance.add');
 
 
-Route::get('admin/issuedsalary',AdminIssuedSalaryLivewire::class)->name('admin.issued.salary');
+Route::get('admin/issuedsalary',AdminIssuedSalaryLivewire::class)->name('admin.issuedsalary');
 
 
-Route::get('admin/issuedsalary/edit/{user_id}',AdminIssuedSalaryEditLivewire::class)->name('admin.issuedsalary.edit');
+Route::get('admin/issuedsalary/edit',AdminIssuedSalaryEditLivewire::class)->name('admin.issuedsalary.edit');
 Route::get('admin/issuedsalary/add',AdminIssuedSalaryAddLivewire::class)->name('admin.issuedsalary.add');
 
 
