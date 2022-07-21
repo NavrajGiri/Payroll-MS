@@ -67,8 +67,8 @@
         </label>
         <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
             <option>Please select Rank</option>
-            @foreach ($all_ranks as $rank)
-                <option value="{{$rank->id}}">{{$rank->name}}</option>
+            @foreach ($all_users as $rank)
+                <option value="{{$users->id}}">{{$users->name}}</option>
             @endforeach
         </select>
       </div>

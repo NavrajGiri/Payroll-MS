@@ -5,15 +5,23 @@
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Rank id
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="rank_id" id="rank_id" type="text" placeholder="rank_id">
-
+          <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
+            <option>Please select Rank</option>
+            @foreach ($all_ranks as $rank)
+                <option value="{{$rank->id}}">{{$rank->name}}</option>
+            @endforeach
+        </select>
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
-            Grade Name
+            Grade ID
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_name" id="grade_id" type="text" placeholder="grade id">
-
+          <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
+            <option>Please select Grade Id</option>
+            @foreach ($all_grade as $grade)
+                <option value="{{$grade->id}}">{{$grades->name}}</option>
+            @endforeach
+        </select>
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
