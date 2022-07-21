@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 327d51edc42f865b900fe158af5a58ff9dca8c0e
 <center>
     <div class="col-lg-6 w-full max-w-xl">
         <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
@@ -6,8 +10,7 @@
               <label class="block text-gray-700 text-sm font-bold mb-2">
                 User_Id
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="user_id" id="user_id" type="text" placeholder="user_id">
-
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -28,8 +31,9 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2">
                     Allowance_Type
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="allowance_type" id="allowance_type" type="text" placeholder="Allowance_type">
-
+                <select class="form-control" name="allowance_type">
+                  <option value="">credit</option>
+                  <option value="">debit</option></select>
               </div><div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">
                     Amount

@@ -21,8 +21,6 @@
                                 <th class="py-3 px-6 text-center">Note</th>
                                 <th class="py-3 px-6 text-center">Amount</th>
                                 <th class="py-3 px-6 text-center">Issued By</th>
-
-
                                  <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
                         </thead>
@@ -34,9 +32,6 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     {{$issuedsalary->user_id}}
-                                </td>
-                                <td class="py-3 px-6 text-center">
-                                    {{$issuedsalary->grade_name}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$issuedsalary->date}}

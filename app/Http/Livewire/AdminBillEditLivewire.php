@@ -22,8 +22,8 @@ class AdminBillEditLivewire extends Component
 
     }
 
-                public function save(){
-                    $bill = Bill::find($this->bill_id);
+            public function save(){
+            $bill = Bill::find($this->bill_id);
             $bill->bill_no = $this->bill_no;
             $bill->user_id = $this->user_id;
             $bill->product_name = $this ->product_name;

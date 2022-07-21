@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{-- <div>
         <center>
                 Name: <input type="text" wire:model="name"><br><br>
@@ -20,6 +21,9 @@
 </div> --}}
 <center>
     <div class="col-lg-6 w-full max-w-xl">
+=======
+ <div class="col-lg-6 w-full max-w-xl">
+>>>>>>> 327d51edc42f865b900fe158af5a58ff9dca8c0e
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -139,4 +143,8 @@
     </form>
 
   </div>
+<<<<<<< HEAD
 </center>
+=======
+</center> 
+>>>>>>> 327d51edc42f865b900fe158af5a58ff9dca8c0e
