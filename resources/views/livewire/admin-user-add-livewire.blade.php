@@ -27,8 +27,13 @@
  <center>
 
 
- <div class="col-lg-6 w-full max-w-xs">
+<<<<<<< HEAD
+ <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
+=======
+ <div class="col-lg-6 w-full max-w-xs">
+    <form class= "bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-8">
+>>>>>>> 0f65979c4491452138c9aab7117246744d341729
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Name
