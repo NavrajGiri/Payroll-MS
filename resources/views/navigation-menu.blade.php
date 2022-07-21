@@ -31,7 +31,7 @@
                     <x-jet-nav-link href="{{ route('admin.allowance') }}">
                         {{ __('Allowances') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.issued_salary') }}">
+                    <x-jet-nav-link href="{{ route('admin.issuedsalary') }}">
                         {{ __('Issued Salary') }}
 
                     </x-jet-nav-link>
