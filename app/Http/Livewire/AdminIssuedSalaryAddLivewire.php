@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class AdminIssuedSalaryAddLivewire extends Component
 {
-    public $user_id,$grade_name,$salary_amount;
+    public $user_id,$date,$note,$amount,$isued_by;
      function save(){
         $issuedsalary = new IssuedSalary();
         $issuedsalary = $this->user_id;
