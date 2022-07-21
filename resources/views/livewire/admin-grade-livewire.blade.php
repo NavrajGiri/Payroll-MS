@@ -16,7 +16,7 @@
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">ID</th>
-                                <th class="py-3 px-6 text-left">Rank ID</th>
+                                <th class="py-3 px-6 text-left">Rank</th>
                                 <th class="py-3 px-6 text-center">Grade Name</th>
                                 <th class="py-3 px-6 text-center">Salary Amount</th>
                                  <th class="py-3 px-6 text-center">Actions</th>
@@ -29,7 +29,7 @@
                                     {{$grade->id}}
                                 </td>
                                 <td class="py-3 px-6 text-left">
-                                    {{$grade->rank_id}}
+                                    {{\App\Models\Rank::find($grade->rank_id)->name}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$grade->grade_name}}

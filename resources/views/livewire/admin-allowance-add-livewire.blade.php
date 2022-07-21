@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d74752c020fb655f64b3d729a694b6b93852c6d
 <center>
     <div class="col-lg-6 w-full max-w-xl">
         <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">

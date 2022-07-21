@@ -22,6 +22,6 @@ class AdminIssuedSalaryAddLivewire extends Component
         }
         public function render()
         {
-            return view('livewire.admin-issuedsalary-add-livewire');
+            return view('livewire.admin-issued-salary-add-livewire');
         }
     }
