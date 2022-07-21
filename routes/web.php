@@ -61,8 +61,17 @@ Route::get('admin/bill/edit/{bill_id}',AdminBillEditLivewire::class)->name('admi
 Route::get('admin/allowance',AdminAllowanceLivewire::class)->name('admin.allowance');
 Route::get('admin/allownace/edit/{allowance_id}',AdminAllowanceEditLivewire::class)->name('admin.allowance.edit');
 Route::get('admin/allowance/add',AdminAllowanceAddLivewire::class)->name('admin.allowance.add');
+<<<<<<< HEAD
 
 
+=======
+Route::get('admin/issuedsalary',AdminIssuedSalaryLivewire::class)->name('admin.issued.salary');
+
+
+Route::get('admin/issuedsalary/edit/{user_id}',AdminIssuedSalaryEditLivewire::class)->name('admin.issuedsalary.edit');
+Route::get('admin/issuedsalary/add',AdminIssuedSalaryAddLivewire::class)->name('admin.issuedsalary.add');
+
+>>>>>>> 0f65979c4491452138c9aab7117246744d341729
 
 
 

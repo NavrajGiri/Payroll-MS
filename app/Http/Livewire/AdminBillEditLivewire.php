@@ -36,13 +36,13 @@ class AdminBillEditLivewire extends Component
 
             return redirect(route('admin.bill'));
 
+
         }
 
         public function render()
         {
             return view('livewire.admin-bill-edit-livewire');
         }
+
     }
-
-
 
