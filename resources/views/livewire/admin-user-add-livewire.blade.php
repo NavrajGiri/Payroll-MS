@@ -27,13 +27,11 @@
  <center>
 
 
-<<<<<<< HEAD
+
  <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
-=======
  <div class="col-lg-6 w-full max-w-xs">
     <form class= "bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-8">
->>>>>>> 0f65979c4491452138c9aab7117246744d341729
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Name
@@ -67,8 +65,8 @@
         </label>
         <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
             <option>Please select Rank</option>
-            @foreach ($all_users as $rank)
-                <option value="{{$users->id}}">{{$users->name}}</option>
+            @foreach ($all_ranks as $rank)
+                <option value="{{$rank->id}}">{{$rank->name}}</option>
             @endforeach
         </select>
       </div>
@@ -137,7 +135,12 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
           Grade Id
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_id" id="grade_id" type="text" placeholder="grade id">
+        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
+            <option>Please select Rank</option>
+            @foreach ($all_grades as $grade)
+                <option value="{{$grades->id}}">{{$grades->name}}</option>
+            @endforeach
+        </select>
 
       </div><div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" >

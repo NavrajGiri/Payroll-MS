@@ -7,12 +7,7 @@
               <label class="block text-gray-700 text-sm font-bold mb-2">
                 User_Id
               </label>
-              <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
-                <option>Please select Rank</option>
-                @foreach ($all_users as $users)
-                    <option value="{{$users->id}}">{{$users->name}}</option>
-                @endforeach
-            </select>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2">
