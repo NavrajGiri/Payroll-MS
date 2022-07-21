@@ -31,10 +31,11 @@
                     <x-jet-nav-link href="{{ route('admin.allowance') }}">
                         {{ __('Allowances') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.issued_salary') }}">
-                        {{ __('Issued Salary') }}
-
+                    <x-jet-nav-link href="{{ route('user.bill') }}">
+                        {{ __('UserBill') }}
                     </x-jet-nav-link>
+
+
                 </div>
             </div>
 
