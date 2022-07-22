@@ -12,7 +12,7 @@
     <div class="overflow-x-center">
         <div class="flex">
             <div class="w-full lg:w-5/6 ">
-                <div class="bg-lightblue shadow-full rounded my-6">
+                <div class="bg-lightblue rounded my-6">
                     <table class="min-w-max w-full table-center">
                         <thead>
                             <tr class="bg-green-500 text-gray-600 uppercase text-sm leading-normal">

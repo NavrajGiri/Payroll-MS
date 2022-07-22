@@ -13,7 +13,7 @@
 
     <div class="overflow-x-auto">
         <div class="flex">
-            <div class="w-full lg:w-9/12 nx-auto">
+            <div class="w-full ">
                 <div class="bg-white shadow-full rounded my-6">
                     <center>
                     <table class="min-w-max w-full table-auto">
