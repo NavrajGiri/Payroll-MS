@@ -44,8 +44,12 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
         Rank
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
-
+        <select wire:model="rank_id">
+          <option>Please select Rank</option>
+          @foreach ($all_ranks as $rank)
+              <option value="{{$rank->id}}">{{$rank->name}}</option>
+          @endforeach
+      </select>
       </div>
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -112,8 +116,12 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
           Grade Id
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_id" id="grade_id" type="text" placeholder="grade id">
-
+        <select wire:model="grade_id">
+        <option>Please select Grade Id</option>
+        @foreach ($all_grades as $grade)
+            <option value="{{$grade->id}}">{{$grade->name}}</option>
+        @endforeach
+    </select>
       </div><div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" >
           Nagrik lagani kosh NO

@@ -4,8 +4,12 @@
       <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
           <div class="mb-5">
             <label for="user_id" class="block mb-2 font-bold text-gray-600">user id</label>
-            <input type="number" id="user_id" wire:model='user_id' placeholder="user id" class="border border-gray-300 shadow p-3 w-full rounded mb-">
-          </div>
+            <select wire:model="user_id">
+              <option>Please select User Id</option>
+                @foreach ($all_users as $user)
+                    <option value="{{$user->id}}">{{$user->name}}</option>
+                @endforeach
+            </select>        </div>
           <div class="mb-5">
              <label for="date" class="block mb-2 font-bold text-gray-600">Date</label>
              <input type="number" id="date" wire:model='date' placeholder="  Date" class="border border-gray-300 shadow p-3 w-full rounded mb-">
