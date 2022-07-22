@@ -23,7 +23,8 @@
 
           <center> <input type="button"  wire:click='save()' value='save!'></center>
 
-        </form>
+      
       </div>
     </div>
   </div>
+</center>

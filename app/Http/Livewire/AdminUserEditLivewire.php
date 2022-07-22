@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Livewire;
-use App\Models\User;
+use App\Models\Grade;
+use App\Models\Rank;
 use Livewire\Component;
 
 class AdminUserEditLivewire extends Component

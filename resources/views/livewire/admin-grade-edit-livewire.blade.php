@@ -16,13 +16,13 @@
               <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
                   <div class="mb-5">
                     <label for="rank_id" class="block mb-2 font-bold text-gray-600">Rank Id</label>
-                    <select wire:model="rank_id">
+                    <select wire:model="rank_id">>
                       <option>Select a Rank</option>
                       @foreach ($all_ranks as $rank)
                           <option value="{{$rank->id}}">{{$rank->name}}</option>
                       @endforeach
-                    </select>                      </div>
-                  <div class="mb-5">
+                    </select>          </div>
+                          <div class="mb-5">
                      <label for="grade_name" class="block mb-2 font-bold text-gray-600">Grade name</label>
                      <input type="text" id="grade_name" wire:model='grade_name' placeholder=" Grade name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
                    </div>

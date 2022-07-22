@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 Use App\Models\Bill;
 use Livewire\Component;
+use App\Models\Rank;
 
 class AdminBillEditLivewire extends Component
 {
