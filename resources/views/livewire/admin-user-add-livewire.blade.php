@@ -1,13 +1,27 @@
+<<<<<<< HEAD
  <center>
  <div class="col-lg-6 w-full max-w-xs">
     <form class= "bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-8">
+=======
+<center>
+    <div class="col-lg-6 w-full max-w-xl"> <div class="col-lg-6 w-full max-w-xl">
+    <form class= "bg-white shadow-full rounded px-8 pt-6 pb-8 mb-8">
+>>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Name
           </label>
+<<<<<<< HEAD
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="email" id="email" type="text" placeholder="email">
           </div>
          
+=======
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="name" id="name" type="text" placeholder="name">
+
+        </div>
+
+        </div>
+>>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Email
@@ -32,12 +46,13 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
         Rank
         </label>
-        <select wire:model="rank_id">
-          <option>Please select Rank</option>
+        <select class ="shadow appearance-none border rounded w- full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " wire:model='rank'>
+            <option>Please select Rank</option>
             @foreach ($all_ranks as $rank)
-                <option value="{{$rank->id}}">{{$rank->name}}</option>
+            <option value="{{$rank->id}}">{{$rank->name}}</option>
             @endforeach
         </select>
+
       </div>
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -104,9 +119,11 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
           Grade Id
         </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_id" id="grade_id" type="text" placeholder="grade id">
+
         <select wire:model="grade_id">
         <option>Please select Grade Id</option>
-        @foreach ($all_grade as $grade)
+        @foreach ($all_grades as $grade)
             <option value="{{$grade->id}}">{{$grade->name}}</option>
         @endforeach
     </select>
@@ -119,6 +136,7 @@
       </div>
 
       <div class="flex items-center justify-between">
+
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" wire:click='save()' value="save!">
           save
         </button>
@@ -128,4 +146,8 @@
 
   </div>
 </center>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
       </div>

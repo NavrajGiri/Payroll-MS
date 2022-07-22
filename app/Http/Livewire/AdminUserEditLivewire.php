@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 use App\Models\Grade;
+use App\Models\User;
 use App\Models\Rank;
 use Livewire\Component;
 
@@ -56,14 +57,10 @@ class AdminUserEditLivewire extends Component
     public function render()
     {
          $all_ranks = Rank::all();
+        $all_grades = Grade::all();
         return view('livewire.admin-user-edit-livewire',[
             'all_ranks'=>$all_ranks,
-            
-
-        ]);
-        $all_users = User::all();
-        return view('livewire.admin-user-edit-livewire',[
-            'all_users'=>$all_user,
+            'all_grades'=>$all_grades,
         ]);
     }
 }

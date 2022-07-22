@@ -10,5 +10,6 @@ class AdminGradeLivewire extends Component
     {
         $all_grade = Grade::all();
         return view('livewire.admin-grade-livewire',['all_grade'=>$all_grade]);
+
     }
 }

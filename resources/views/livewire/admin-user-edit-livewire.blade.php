@@ -3,15 +3,15 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <div>
-                <button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">USERS </button>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">User</button>
                 </div>
             <div><a href="{{route('admin.user')}}" >
-            <button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">All Users </button>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">ALl User</button>
         </a></div>
 
         </div>
-<center>
-    <div class="col-lg-6 w-full max-w-xl"> <div class="col-lg-6 w-full max-w-xl">
+    </x-slot>
+    <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">

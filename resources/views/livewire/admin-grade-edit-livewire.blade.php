@@ -3,10 +3,10 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <div>
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Grade</button>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Grade</button>
             </div>
             <div><a href="{{route('admin.grade')}}" >
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">All Grade   </button>    </a></div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">All Grade   </button>    </a></div>
 
         </div>
 
@@ -21,8 +21,14 @@
                       @foreach ($all_ranks as $rank)
                           <option value="{{$rank->id}}">{{$rank->name}}</option>
                       @endforeach
+<<<<<<< HEAD
                     </select>          </div>
                           <div class="mb-5">
+=======
+                    </select>
+                </div>
+                  <div class="mb-5">
+>>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
                      <label for="grade_name" class="block mb-2 font-bold text-gray-600">Grade name</label>
                      <input type="text" id="grade_name" wire:model='grade_name' placeholder=" Grade name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
                    </div>

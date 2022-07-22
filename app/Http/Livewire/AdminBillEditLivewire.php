@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 Use App\Models\Bill;
+use App\Models\User;
 use Livewire\Component;
 use App\Models\Rank;
 
