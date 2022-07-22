@@ -186,7 +186,7 @@
         </label>
         <select wire:model="grade_id">
         <option>Please select Grade Id</option>
-        @foreach ($all_grades as $grade)
+        @foreach ($all_grade as $grade)
             <option value="{{$grade->id}}">{{$grade->name}}</option>
         @endforeach
     </select>
