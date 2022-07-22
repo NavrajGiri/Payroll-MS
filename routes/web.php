@@ -75,7 +75,7 @@ Route::get('admin/issuedsalary/add',AdminIssuedSalaryAddLivewire::class)->name('
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('dashboard'));
 });
 
 

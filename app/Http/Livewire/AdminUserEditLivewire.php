@@ -58,13 +58,9 @@ class AdminUserEditLivewire extends Component
     public function render()
     {
          $all_ranks = Rank::all();
-        return view('livewire.admin-user-edit-livewire',[
-            'all_ranks'=>$all_ranks,
-
-
-        ]);
         $all_grades = Grade::all();
         return view('livewire.admin-user-edit-livewire',[
+            'all_ranks'=>$all_ranks,
             'all_grades'=>$all_grades,
         ]);
     }

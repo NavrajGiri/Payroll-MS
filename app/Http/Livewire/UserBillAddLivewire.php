@@ -11,17 +11,17 @@ class UserBillAddLivewire extends Component
 
         public function save(){
             $bill = new Bill();
-        $bill->bill_no = $bill->bill_no;
-        $bill->user_id = $bill->user_id;
-        $bill->product_name = $bill ->product_name;
-        $bill->product_details = $bill ->product_details;
-        $bill->quantity = $bill ->quantity;
-        $bill->amount = $bill ->amount;
-        $bill->issued_salary_id = $bill ->issued_salary_id;
-        $bill->total_amount = $bill->total_amount;
-        $bill->save();
+            $bill->bill_no = $bill->bill_no;
+            $bill->user_id = auth()->user()->id;
+            $bill->product_name = $bill ->product_name;
+            $bill->product_details = $bill ->product_details;
+            $bill->quantity = $bill ->quantity;
+            $bill->amount = $bill ->amount;
+            $bill->issued_salary_id = $bill ->issued_salary_id;
+            $bill->total_amount = $bill->total_amount;
+            $bill->save();
 
-        return redirect(route('admin.bill'));
+            return redirect(route('admin.bill'));
 
         }
 

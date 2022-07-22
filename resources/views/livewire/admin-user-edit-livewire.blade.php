@@ -10,7 +10,7 @@
         </a></div>
 
         </div>
-<center>
+    </x-slot>
     <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <div class="mb-4">

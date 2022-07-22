@@ -1,33 +1,47 @@
-<div class="bg-blue-200 min-h-screen flex items-center">
-    <div class="w-full">
-      <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Issuedsalary Add</h2>
-      <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
-          <div class="mb-5">
-            <label for="user_id" class="block mb-2 font-bold text-gray-600">user id</label>
-            <select wire:model="user_id">
-              <option>Please select User Id</option>
-                @foreach ($all_users as $user)
-                    <option value="{{$user->id}}">{{$user->name}}</option>
-                @endforeach
-            </select>        </div>
-          <div class="mb-5">
-             <label for="date" class="block mb-2 font-bold text-gray-600">Date</label>
-             <input type="number" id="date" wire:model='date' placeholder="  Date" class="border border-gray-300 shadow p-3 w-full rounded mb-">
-           </div>
-
-           <div class="mb-5">
-             <label for="note" class="block mb-2 font-bold text-gray-600">Note</label>
-             <input type="text" id="note" wire:model='note' placeholder="note" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
-             <div class="mb-5">
-                <label for="amount" class="block mb-2 font-bold text-gray-600">Amount</label>
-                <input type="number" id="amount" wire:model='amount' placeholder="Amount" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
-             <div class="mb-5">
-             <label for="issued_by" class="block mb-2 font-bold text-gray-600">Issued by</label>
-                    <input type="text" id="issued_by" wire:model='issued_by' placeholder="Isssud by" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
-
-          <center> <input type="button"  wire:click='save()' value='save!'></center>
-
-        </form>
-      </div>
+<div>
+    <div class="grid grid-cols-6">
+        <div>Name</div>
+        <div>Salary</div>
+        <div>Bills</div>
+        <div>Allowance</div>
+        <div>Total</div>
+        <div>Action</div>
     </div>
-  </div>
+    @foreach ($all_users as $user)
+    <div class="grid grid-cols-6 border-b pb-5 pt-5">
+        <div>{{$user->name}}</div>
+        <div>{{$salary = $user->grade()->first()->salary_amount}}</div>
+        <div>
+            @php
+                $bills = $user->bill()->whereNull('issued_salary_id')->get();
+                $total_bills = 0;
+                foreach($bills as $bill){
+                    $total_bills = $total_bills + $bill->amount;
+                    echo "Rs ".$bill->amount." for ".$bill->product_name."<br/>";
+                }
+                echo "Total: Rs ". $total_bills;
+            @endphp
+        </div>
+        <div>
+            @php
+                $allowances = $user->allowance()->whereNull('issued_salary_id')->get();
+                $total_allowance = 0;
+                foreach($allowances as $allowance){
+                    if($allowance->allowance_type == "debit") {
+                        $allowance->amount = -$allowance->amount;
+                    }
+                    $total_allowance = $total_allowance + $allowance->amount;
+                    echo "Rs ".$allowance->amount." for ".$allowance->allowance_name."<br/>";
+                }
+                echo "Total: Rs ". $total_allowance;
+            @endphp
+        </div>
+        <div>Rs. {{$salary + $total_bills + $total_allowance}}</div>
+        <div>
+            <input wire:model="note" placeholder="Note">
+            <input wire:model="method" placeholder="Payment Method">
+            <input type="button" value="Issue this Salary!" wire:click='issue_salary({{$user->id}})'>
+        </div>
+    </div>
+    @endforeach
+</div>

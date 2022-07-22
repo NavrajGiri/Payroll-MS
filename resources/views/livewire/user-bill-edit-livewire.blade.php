@@ -18,10 +18,6 @@
                     <label for="user_id" class="block mb-2 font-bold text-gray-600"> bill No</label>
                     <input type="number" id="user_id" wire:model='bill_no' placeholder="Bill No" class="border border-gray-300 shadow p-3 w-full rounded mb-">
                   </div>
-                  <div class="mb-5">
-                     <label for="user_id" class="block mb-2 font-bold text-gray-600">user id</label>
-                     <input type="number" id="user_id" wire:model='user_id' placeholder=" user id" class="border border-gray-300 shadow p-3 w-full rounded mb-">
-                   </div>
 
                    <div class="mb-5">
                      <label for="product_name" class="block mb-2 font-bold text-gray-600">Product Name </label>
