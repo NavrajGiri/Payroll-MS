@@ -34,12 +34,17 @@
                     <x-jet-nav-link href="{{ route('admin.issuedsalary') }}">
                         {{ __('Issued Salary') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.bill') }}">
-                        {{ __('AdminBill') }}
-                    </x-jet-nav-link>
+
                     <x-jet-nav-link href="{{ route('user.bill') }}">
                         {{ __('UserBill') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('user.allowance') }}">
+                        {{ __('Userallwance') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('user.payment') }}">
+                        {{ __('Userpayment') }}
+                    </x-jet-nav-link>
+
 
                     {{-- <img src="{{ asset('image/sts logo.jpg') }}" class="rounded h-14 w-auto" > --}}
 
