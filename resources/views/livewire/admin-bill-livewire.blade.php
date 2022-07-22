@@ -1,7 +1,9 @@
 <div>
 <x-slot name="header">
         <div class="flex justify-between items-center">
-            <div>Bill</div>
+            <div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Bill</button>
+            </div>
             {{-- <div><a href="{{route('admin.bill.add')}}" class="underline">Add New Bill</a></div> --}}
         </div>
     </x-slot>
@@ -9,7 +11,7 @@
         <div class="flex">
             <div class="w-full lg:w-5/6">
                 <div class="bg-white shadow-md rounded my-6">
-                    <table class="min-w-max w-full table-auto">
+                    <table class="min-w-max w-full table-center text center">
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">ID</th>

@@ -1,7 +1,9 @@
 <div>
     <x-slot name="header">
         <div class="flex justify-between items-center">
-            <div>User</div>
+            <div> <button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">All Users </button>
+            </button>
+            </div>
             <div><a href="{{route('admin.user.add')}}" >
             <button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Add User </button>
         </a></div>
@@ -18,19 +20,12 @@
                                 <th class="py-3 px-6 text-left">Name</th>
                                 <th class="py-3 px-6 text-left">Computer No.</th>
                                 <th class="py-3 px-6 text-center">Rank</th>
-
-                                
-                                <th class="py-3 px-6 text-center">DOB</th>
                                 <th class="py-3 px-6 text-center">Gender</th>
-                                <th class="py-3 px-6 text-center">Merital Status</th>
                                 <th class="py-3 px-6 text-center">Address</th>
                                 <th class="py-3 px-6 text-center">Phone No.</th>
-                                <th class="py-3 px-6 text-center">Joining Date</th>
-                               {{-- <th class="py-3 px-6 text-center">Blood Group</th> --}}
                                 <th class="py-3 px-6 text-center">PAN No.</th>
                                 <th class="py-3 px-6 text-center">Bank Name.</th>
                                 <th class="py-3 px-6 text-center">Account No.</th>
-                                <th class="py-3 px-6 text-center">Grade ID</th>
                                 <th class="py-3 px-6 text-center">Nagarik Lagani Kosh No.</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
                             </tr>
