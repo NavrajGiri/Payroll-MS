@@ -42,6 +42,14 @@ class UserBillEditLivewire extends Component
 
     public function render()
     {
-        return view('livewire.user-bill-edit-livewire');
+        $all_users = User::all();
+        return view('livewire.user-bill-edit-livewire',[
+            'all_users'=>$all_users,
+        ]);
+
+        $all_issuedsalary = Issuedsalary::all();
+        return view('livewire.user-bill-edit-livewire',[
+            'all_issuedsalary'=>$issuedsalary,
+        ]);
     }
 }

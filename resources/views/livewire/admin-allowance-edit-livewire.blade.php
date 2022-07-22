@@ -23,8 +23,12 @@
               <label class="block text-gray-700 text-sm font-bold mb-2">
                 User_Id
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="user_id" id="user_id" type="text" placeholder="user_id">
-
+              <select wire:model="user_id">
+              <option>Please select User Id</option>
+                @foreach ($all_users as $user)
+                    <option value="{{$user->id}}">{{$user->name}}</option>
+                @endforeach
+            </select>
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2">

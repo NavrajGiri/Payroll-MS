@@ -14,8 +14,12 @@
               <label class="block text-gray-700 text-sm font-bold mb-2">
                 User Id
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="user-id" id="grade_id" type="text" placeholder="grade id">
-
+              <select wire:model="user_id">                
+                <option>Select a User Id</option>
+                @foreach ($all_users as $user)
+                    <option value="{{$user->id}}">{{$user->name}}</option>
+                @endforeach
+              </select>
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -46,8 +50,12 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2">
                   Issued salary Id
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="issued_salary_id" id="issued_salary_id" type="text" placeholder="Issued salary id">
-
+                <select wire:model="issued-salary_id">                  
+                  <option>Please select Issued Salary Id</option>
+                  @foreach ($all_issuedsalary as $issuedsalary)
+                      <option value="{{$issuedsalary->id}}">{{$issuedsalary->name}}</option>
+                  @endforeach
+              </select>
               </div><div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">
                   Total Amount

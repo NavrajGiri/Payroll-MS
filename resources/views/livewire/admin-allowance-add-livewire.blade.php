@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 1d74752c020fb655f64b3d729a694b6b93852c6d
 <center>
     <div class="col-lg-6 w-full max-w-xl">
         <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
@@ -9,8 +6,12 @@
               <label class="block text-gray-700 text-sm font-bold mb-2">
                 User_Id
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="allowance_name" id="allowance_name" type="text" placeholder="Allowance_name">
-
+              <select wire:model="user_id">
+                 <option>Please select User Id</option>
+                @foreach ($all_users as $user)
+                    <option value="{{$user->id}}">{{$user->name}}</option>
+                @endforeach
+            </select>
               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
             </div>
             <div class="mb-4">

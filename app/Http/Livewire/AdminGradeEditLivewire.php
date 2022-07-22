@@ -26,6 +26,7 @@ class AdminGradeEditLivewire extends Component
     }
     public function render()
     {
-        return view('livewire.admin-grade-edit-livewire');
+        $all_ranks = Rank::all();
+        return view('livewire.admin-grade-edit-livewire',['all_ranks'=>$all_ranks]);
     }
 }

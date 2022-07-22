@@ -29,6 +29,8 @@ class AdminAllowanceAddLivewire extends Component
 
     public function render()
     {
-        return view('livewire.admin-allowance-add-livewire');
+        
+        $all_users = User::all();
+        return view('livewire.admin-allowance-add-livewire',['all_users'=>$all_users]);
     }
 }
