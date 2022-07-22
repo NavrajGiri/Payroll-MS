@@ -10,6 +10,6 @@ class AdminIssuedSalaryLivewire extends Component
     public function render()
     {
         $all_issuedsalary = IssuedSalary::all();
-        return view('livewire.admin-issuedsalary-livewire',['all_issuedsalary'=>$all_issuedsalary]);
+        return view('livewire.admin-issued-salary-livewire',['all_issuedsalary'=>$all_issuedsalary]);
     }
 }

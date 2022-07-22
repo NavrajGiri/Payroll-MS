@@ -5,13 +5,19 @@
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Rank id
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
+          <select wire:model="rank_id">
+            <option>Select a Rank</option>
+            @foreach ($all_ranks as $rank)
+                <option value="{{$rank->id}}">{{$rank->name}}</option>
+            @endforeach
+          </select>
+          {{-- <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount"> --}}
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
-            Grade ID
+            Grade Name
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="salary_amount" id="salary_amount" type="text" placeholder="salary amount">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_name" id="salary_amount" type="text" placeholder="grade name">
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">

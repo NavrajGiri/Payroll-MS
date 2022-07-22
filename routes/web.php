@@ -20,7 +20,6 @@ use App\Http\Livewire\AdminUserAddLivewire;
 use App\Http\Livewire\AdminIssuedSalaryLivewire;
 use App\Http\Livewire\AdminIssuedSalaryAddLivewire;
 use App\Http\Livewire\AdminIssuedSalaryEditLivewire;
-
 use Illuminate\Support\Facades\Route;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 
