@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 use App\Models\Allowance;
+use App\Models\User;
 use Livewire\Component;
 
 class AdminAllowanceAddLivewire extends Component
@@ -29,7 +30,7 @@ class AdminAllowanceAddLivewire extends Component
 
     public function render()
     {
-        
+
         $all_users = User::all();
         return view('livewire.admin-allowance-add-livewire',['all_users'=>$all_users]);
     }

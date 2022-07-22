@@ -24,7 +24,8 @@
                         @foreach ($all_users as $user)
                             <option value="{{$user->id}}">{{$user->name}}</option>
                         @endforeach
-                    </select>                  </div>
+                    </select>
+                </div>
                   <div class="mb-5">
                      <label for="date" class="block mb-2 font-bold text-gray-600">Date</label>
                      <input type="date" id="date" wire:model='date' placeholder="  Date" class="border border-gray-300 shadow p-3 w-full rounded mb-">

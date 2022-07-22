@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 use App\Models\Bill;
+use App\Models\User;
+use App\Models\IssuedSalary;
 use Livewire\Component;
 
 class UserBillEditLivewire extends Component
@@ -49,7 +51,7 @@ class UserBillEditLivewire extends Component
 
         $all_issuedsalary = Issuedsalary::all();
         return view('livewire.user-bill-edit-livewire',[
-            'all_issuedsalary'=>$issuedsalary,
+            'all_issuedsalary'=>$all_issuedsalary,
         ]);
     }
 }

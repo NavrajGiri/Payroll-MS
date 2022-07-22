@@ -6,12 +6,13 @@
 
             </div>
             <div><a href="{{route('admin.allowance.add')}}" >
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Add Allowance</button>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Add Allowance</button> </a>
 
         </div>
 
 
     </x-slot>
+</div>
     <div class="overflow-x-auto">
         <div class="flex">
             <div class="w-full lg:w-5/6">
@@ -39,7 +40,7 @@
                                 </td>
                                 <td class="py-3 px-6 text-left">
                                     {{$allowance->user_id}}
-                                                    </td>
+                                </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$allowance->allowance_name}}
                                 </td>
@@ -48,10 +49,8 @@
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$allowance->allowance_type}}
-
-
-
-                                </td> <td class="py-3 px-6 text-center">
+                                </td>
+                                <td class="py-3 px-6 text-center">
                                     {{$allowance->amount}}
                                 </td> <td class="py-3 px-6 text-center">
                                     {{$allowance->total}}

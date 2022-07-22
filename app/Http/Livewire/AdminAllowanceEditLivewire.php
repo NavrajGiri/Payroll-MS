@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 use App\Models\Allowance;
+use App\Models\User;
 
 use Livewire\Component;
 

@@ -21,7 +21,8 @@
                       @foreach ($all_ranks as $rank)
                           <option value="{{$rank->id}}">{{$rank->name}}</option>
                       @endforeach
-                    </select>                      </div>
+                    </select>
+                </div>
                   <div class="mb-5">
                      <label for="grade_name" class="block mb-2 font-bold text-gray-600">Grade name</label>
                      <input type="text" id="grade_name" wire:model='grade_name' placeholder=" Grade name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
