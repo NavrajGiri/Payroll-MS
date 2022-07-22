@@ -39,10 +39,10 @@
                         {{ __('UserBill') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('user.allowance') }}">
-                        {{ __('Userallwance') }}
+                        {{ __('UserAllowance') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('user.payment') }}">
-                        {{ __('Userpayment') }}
+                        {{ __('UserPayment') }}
                     </x-jet-nav-link>
 
 

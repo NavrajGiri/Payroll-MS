@@ -1,6 +1,6 @@
 <div class="bg-blue-200 min-h-screen flex items-center">
     <div class="w-full">
-      <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Admin Grade Edit</h2>
+      <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Issuedsalary Add</h2>
       <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
           <div class="mb-5">
             <label for="user_id" class="block mb-2 font-bold text-gray-600">user id</label>

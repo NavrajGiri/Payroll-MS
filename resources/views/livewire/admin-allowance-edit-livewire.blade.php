@@ -3,11 +3,11 @@
         <div class="flex justify-between items-center">
             <div>
 
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Allowance  </button>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Allowance</button>
 
             </div>
             <div><a href="{{route('admin.allowance')}}" >
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">All Allowance   </button>    </a></div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">All Allowance</button>
             </a></div>
 
         </div>
@@ -15,7 +15,7 @@
 
         <div class="bg-blue-200 min-h-screen flex items-center">
             <div class="w-full">
-              <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Admin Allowance Edit</h2>
+              <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10"> <u>Admin Allowance Edit</u> </h2>
               <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
                   <div class="mb-5">
                     <label for="user_id" class="block mb-2 font-bold text-gray-600">User Id</label>

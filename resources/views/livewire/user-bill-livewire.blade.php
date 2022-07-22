@@ -3,11 +3,11 @@
         <x-slot name="header">
                 <div class="flex justify-between items-center">
                     <div>
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> USER Bill</button>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> USER Bill</button>
 
                     </div>
                     <div><a href="{{route('user.bill.add')}}" class="underline">
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add User Bill</button>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add User Bill</button>
                         </a></div>
                 </div>
             </x-slot>
@@ -17,7 +17,7 @@
                         <div class="bg-white shadow-md rounded my-6">
                             <table class="min-w-max w-full table-auto">
                                 <thead>
-                                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                                    <tr class="bg-green-500 text-gray-600 uppercase text-sm leading-normal">
                                         <th class="py-3 px-6 text-left">ID</th>
                                         <th class="py-3 px-6 text-left">Bill No.</th>
                                         <th class="py-3 px-6 text-center">User ID</th>
