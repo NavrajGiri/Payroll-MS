@@ -1,20 +1,24 @@
 <div>
     <x-slot name="header">
         <div class="flex justify-between items-center">
-            <div>Ranks</div>
+            <div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Rank</button>
+            </div>
             <div><a href="{{route('admin.rank.add')}}" >
-            <button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Add Rank </button>
-        </a></div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add Rank</button>        </a>
+            </div>
 
         </div>
     </x-slot>
+
     <div class="overflow-x-auto">
         <div class="flex">
-            <div class="w-full lg:w-5/6">
-                <div class="bg-white shadow-md rounded my-6">
+            <div class="w-full lg:w-9/12 nx-auto">
+                <div class="bg-white shadow-full rounded my-6">
+                    <center>
                     <table class="min-w-max w-full table-auto">
                         <thead>
-                            <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                            <tr class="bg-green-500 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">Name</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
@@ -23,6 +27,7 @@
                         <tbody class="text-gray-600 text-sm font-light">
                             @foreach($all_rank as $rank)
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
+
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
                                     {{$rank->id}}
                                 </td>
@@ -44,7 +49,7 @@
                             </tr>
                             @endforeach
                         </tbody>
-                    </table>
+                    </table></center>
                 </div>
             </div>
         </div>

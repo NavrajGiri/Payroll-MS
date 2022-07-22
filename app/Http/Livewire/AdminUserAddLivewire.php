@@ -40,7 +40,12 @@ class AdminUserAddLivewire extends Component
         $all_ranks = Rank::all();
         return view('livewire.admin-user-add-livewire',[
             'all_ranks'=>$all_ranks,
+            
 
+        ]);
+        $all_users = User::all();
+        return view('livewire.admin-user-add-livewire',[
+            'all_users'=>$all_users,
         ]);
     }
 }

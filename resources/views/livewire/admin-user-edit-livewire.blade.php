@@ -1,23 +1,15 @@
-{{-- <div>
-        <center>
-                Name: <input type="text" wire:model="name"><br><br>
-                Computer_No: <input type="number" wire:model="computer_no"><br><br>
-                Rank: <input type="text" wire:model="rank"><br><br>
-                Dob: <input type="date" wire:model="date_of_birth"><br><br>
-                Gender: <input type="text" wire:model="gender"><br><br>
-                Merital_status: <input type="text" wire:model="merital_status"><br><br>
-                Address: <input type="text" wire:model="address"><br><br>
-                Phone_No: <input type="number" wire:model="phone_no"><br><br>
-                Joining_Date: <input type="date" wire:model="joining_date"><br><br>
-                blood_Group: <input type="text" wire:model="blood_group"><br><br>
-                Pan_No: <input type="number" wire:model="pan_no"><br><br>
-                Bank_Name: <input type="text" wire:model="bank_no"><br><br>
-                Acount_NO: <input type="number" wire:model="account_no"><br><br>
-                Grade_Id: <input type="number" wire:model="grade_id"><br><br>
-                nagrik_lagani_kosh_No: <input type="number" wire:model="nagrik_lagani_kosh_no"><br><br>
-                <input type="button" value="update" wire:click='save()' value="save!"><br><br>
-        </center>
-</div> --}}
+
+<div>
+    <x-slot name="header">
+        <div class="flex justify-between items-center">
+            <div>
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">User</button>
+                </div>
+            <div><a href="{{route('admin.user')}}" >
+                <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">ALl User</button>
+        </a></div>
+
+        </div>
 <center>
     <div class="col-lg-6 w-full max-w-xl"> <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8">
@@ -52,8 +44,12 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
         Rank
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model='rank'>
-
+        <select wire:model="rank_id">
+          <option>Please select Rank</option>
+          @foreach ($all_ranks as $rank)
+              <option value="{{$rank->id}}">{{$rank->name}}</option>
+          @endforeach
+      </select>
       </div>
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -120,8 +116,12 @@
         <label class="block text-gray-700 text-sm font-bold mb-2">
           Grade Id
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="grade_id" id="grade_id" type="text" placeholder="grade id">
-
+        <select wire:model="grade_id">
+        <option>Please select Grade Id</option>
+        @foreach ($all_grades as $grade)
+            <option value="{{$grade->id}}">{{$grade->name}}</option>
+        @endforeach
+    </select>
       </div><div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" >
           Nagrik lagani kosh NO

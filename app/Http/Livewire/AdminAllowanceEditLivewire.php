@@ -40,6 +40,7 @@ return redirect(route('admin.allowance'));
 
     public function render()
     {
-        return view('livewire.admin-allowance-edit-livewire');
+        $all_users = User::all();
+        return view('livewire.admin-allowance-edit-livewire',['all_users'=>$all_users]);
     }
 }
