@@ -19,16 +19,20 @@
                      <div class="mb-5">
              <label for="amount" class="block mb-2 font-bold text-gray-600">Amount </label>
                          <input type="number" id=" amount" wire:model='amount' placeholder="Amount " class="border border-gray-300 shadow p-3 w-full rounded mb-">
-         <div class="mb-5">
-         <label for="isssed_salary_id" class="block mb-2 font-bold text-gray-600">Issued salary id </label>
-                                        <input type="number" id=" isssed_salary_id" wire:model='isssed_salary_id' placeholder="Issued salary id  " class="border border-gray-300 shadow p-3 w-full rounded mb-">
-                                        <div class="mb-5">
-                                            <label for="total_amount" class="block mb-2 font-bold text-gray-600">Total Amount </label>
-                                                        <input type="number" id=" total_amount" wire:model='total_amount' placeholder=" Total Amount " class="border border-gray-300 shadow p-3 w-full rounded mb-">
+              <div class="mb-5">
+              <label for="isssed_salary_id" class="block mb-2 font-bold text-gray-600">Issued salary id </label>
+                 <input type="number" id=" isssed_salary_id" wire:model='isssed_salary_id' placeholder="Issued salary id  " class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                <div class="mb-5">
+                <label for="total_amount" class="block mb-2 font-bold text-gray-600">Total Amount </label>
+            <input type="number" id=" total_amount" wire:model='total_amount' placeholder=" Total Amount " class="border border-gray-300 shadow p-3 w-full rounded mb-">
 
 
-          <center> <input type="button"  wire:click='save()'></center>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" wire:click='save()' value="save!">
+              save
+            </button>
 
+          </div>
         </form>
       </div>
     </div>
