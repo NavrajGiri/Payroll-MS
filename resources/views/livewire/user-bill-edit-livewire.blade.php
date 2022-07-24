@@ -43,18 +43,6 @@
                     <input type="number" id=" total_amount" wire:model='total_amount' placeholder=" Total Amount " class="border border-gray-300 shadow p-3 w-full rounded mb-">
 
                   </div>
-                <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                                      Issued salary Id
-                 </label>
-                 <select wire:model="issued-salary_id">
-                <option>Please select Issued Salary Id</option>
-                       @foreach ($all_issuedsalary as $issuedsalary)
-                    <option value="{{$issuedsalary->id}}">{{$issuedsalary->name}}
-                    </option>
-                                      @endforeach
-                                  </select>
-                                  </div>
 
 
                   <div class="flex items-center justify-between">

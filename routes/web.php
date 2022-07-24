@@ -68,7 +68,8 @@ Route::get('admin/allowance/add',AdminAllowanceAddLivewire::class)->name('admin.
 Route::get('admin/issuedsalary',AdminIssuedSalaryLivewire::class)->name('admin.issuedsalary');
 
 
-Route::get('admin/issuedsalary/edit',AdminIssuedSalaryEditLivewire::class)->name('admin.issuedsalary.edit');
+// Route::get('admin/issuedsalary/{$salary_id}/edit',AdminIssuedSalaryEditLivewire::class)->name('admin.issuedsalary.edit');
+
 Route::get('admin/issuedsalary/add',AdminIssuedSalaryAddLivewire::class)->name('admin.issuedsalary.add');
 
 

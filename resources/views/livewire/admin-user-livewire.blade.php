@@ -9,6 +9,7 @@
         </a></div>
 </div>
     </x-slot>
+    <input wire:model="keyword">
     <div class="overflow-x-center">
         <div class="flex">
             <div class="w-full lg:w-5/6 ">
