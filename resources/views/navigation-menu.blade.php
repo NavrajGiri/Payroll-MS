@@ -46,7 +46,7 @@
                     </x-jet-nav-link>
 
 
-                    {{-- <img src="{{ asset('image/sts logo.jpg') }}" class="rounded h-14 w-auto" > --}}
+
 
                 </div>
             </div>

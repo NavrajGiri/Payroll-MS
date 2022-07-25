@@ -13,3 +13,4 @@ class UserAllowance extends Component
         return view('livewire.user-allowance',['all_allowance'=>$all_allowance]);
     }
 }
+

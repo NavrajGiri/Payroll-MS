@@ -16,6 +16,7 @@ class AdminUserLivewire extends Component
                                         ->orWhere('email','like','%'.$this->keyword.'%')
                                         ->orWhere('phone_no','like','%'.$this->keyword.'%')
                                         ->orWhere('computer_no','like','%'.$this->keyword.'%');
+
                             })->get();
         return view('livewire.admin-user-livewire',['all_users'=>$all_users]);
     }
