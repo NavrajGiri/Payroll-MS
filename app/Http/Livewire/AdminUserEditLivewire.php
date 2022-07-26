@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Livewire;
-
 use App\Models\Grade;
 use App\Models\User;
 use App\Models\Rank;

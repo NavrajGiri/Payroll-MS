@@ -11,6 +11,8 @@
     </x-slot>
     <div class="overflow-x-auto">
         <div class="flex">
+            <div class="w-full">
+                <div class="bg-secondary shadow-md rounded my-6">
             <div class="w-full ">
                 <div class="bg-secondary shadow-full rounded my-6">
                     <table class="min-w-max w-full table-center">

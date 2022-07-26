@@ -9,6 +9,9 @@
     </x-slot>
     <div class="overflow-x-auto">
         <div class="flex">
+            <div class="w-full lg:w-9/12">
+                <div class="bg-white shadow-md rounded my-6">
+            <div class="w-full lg:w-5/6">
             <div class="w-full ">
                 <div class="bg-white shadow-full rounded my-6">
                     <table class="min-w-max w-full table-center text center">
