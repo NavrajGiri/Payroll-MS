@@ -39,7 +39,7 @@
                                     {{$bills->bill_no}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
-                                    {{$bills->user_id}}
+                                    {{ \App\Models\User::find($bills->user_id)->name}}
                                 </td>
                                 <td class="py-3 px-6 text-center">
                                     {{$bills->product_name}}

@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Grade;
 use App\Models\Rank;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 
 class AdminUserAddLivewire extends Component
@@ -18,7 +19,7 @@ class AdminUserAddLivewire extends Component
         $user->rank = $this->rank;
         $user->name = $this->name;
         $user->email = $this->email;
-        $user->password = $this->password;
+        $user->password = Hash::make($this->password);
         $user->rank = $this->rank;
         $user->date_of_birth = $this->date_of_birth;
         $user->gender = $this->gender;
@@ -31,6 +32,7 @@ class AdminUserAddLivewire extends Component
         $user->bank_no = $this->bank_no;
         $user->account_no = $this->account_no;
         $user->grade_id = $this->grade_id;
+        $user->type = 'user';
         $user->nagrik_lagani_kosh_no= $this->nagrik_lagani_kosh_no;
         // dd($user);
         $user->save();
@@ -39,7 +41,7 @@ class AdminUserAddLivewire extends Component
     public function render()
     {
         $all_ranks = Rank::all();
-        $all_grades = Grade::all();
+        $all_grades = Grade::where('rank_id',$this->rank)->get();
         return view('livewire.admin-user-add-livewire',[
             'all_ranks'=>$all_ranks,
             'all_grades'=>$all_grades,

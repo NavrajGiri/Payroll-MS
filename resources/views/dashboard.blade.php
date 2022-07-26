@@ -64,7 +64,7 @@
   </div>
   <div class="navbar-menu" id="navbar-menu">
     <div class="navbar-end">
-     
+
       </div>
       <div class="navbar-item dropdown has-divider has-user-avatar">
         <a class="navbar-link">

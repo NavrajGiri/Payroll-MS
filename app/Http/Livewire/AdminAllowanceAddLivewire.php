@@ -18,8 +18,7 @@ class AdminAllowanceAddLivewire extends Component
         $allowance->allowance_details = $this->allowance_details;
         $allowance->allowance_type = $this->allowance_type;
         $allowance->amount = $this->amount;
-        $allowance->total = $this->total;
-        $allowance->issued_salary_id = $this->issued_salary_id;
+        $allowance->total = $this->amount;
         $allowance->issue_date = $this->issue_date;
 
 

@@ -1,46 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
- <center>
- <div class="col-lg-6 w-full max-w-xs">
-    <form class= "bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-8">
-=======
+
 <center>
     <div class="col-lg-6 w-full max-w-xl"> <div class="col-lg-6 w-full max-w-xl">
     <form class= "bg-white shadow-full rounded px-8 pt-6 pb-8 mb-8">
->>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2">
-            Name
-          </label>
-<<<<<<< HEAD
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="email" id="email" type="text" placeholder="email">
-          </div>
-         
-=======
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="name" id="name" type="text" placeholder="name">
-=======
->>>>>>> ae9fc1e187eefcec99d0c30978ed3829831af6f6
-
-    <div class="bg-blue-200 min-h-screen flex items-center">
-        <div class="w-full">
-        <h2 class="text-center text-black-700 font-bold text-2xl uppercase mb-10"> User Add</h2>
-        <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
-
-<<<<<<< HEAD
-        </div>
->>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2">
-            Email
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="email" id="email" type="text" placeholder="email">
-=======
             <div class="mb-5">
-            <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
-            <input type="text" id="name" wire:model='name' placeholder="Name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
+                <input type="text" id="name" wire:model='name' placeholder="Name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
->>>>>>> ae9fc1e187eefcec99d0c30978ed3829831af6f6
-
             <div class="mb-5">
                 <label for="email" class="block mb-2 font-bold text-gray-600">email</label>
                 <input type="text" id="email" wire:model='email' placeholder="email" class="border border-gray-300 shadow p-3 w-full rounded mb-">
@@ -48,7 +13,7 @@
 
                  <div class="mb-5">
              <label for="password" class="block mb-2 font-bold text-gray-600"> Password</label>
-             <input type="number" id="password" wire:model='password' placeholder="password" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
+             <input type="text" id="password" wire:model='password' placeholder="password" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
 
              <div class="mb-5">
                  <label for="computer_no" class="block mb-2 font-bold text-gray-600"> computer_no</label>
@@ -56,17 +21,27 @@
 
 
              <div class="mb-5">
-                     <label for="rank" class="block mb-2 font-bold text-gray-600"> Rank</label>
-                     <select class ="shadow appearance-none border rounded w- full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " wire:model='rank'>
-                        <option>Please select Rank</option>
-                        @foreach ($all_ranks as $rank)
-                        <option value="{{$rank->id}}">{{$rank->name}}</option>
-                        @endforeach
-                    </select>
+                    <label for="rank" class="block mb-2 font-bold text-gray-600"> Rank</label>
+                    <select class ="shadow appearance-none border rounded w- full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " wire:model='rank'>
+                    <option>Please select Rank</option>
+                    @foreach ($all_ranks as $rank)
+                    <option value="{{$rank->id}}">{{$rank->name}}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div class="mb-5">
+                <label for="grade_id" class="block mb-2 font-bold text-gray-600">Grade id</label>
+                <select class id="grade_id" wire:model='grade_id' placeholder="Grade id " class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                <option>Please select Rank</option>
+                    @foreach ($all_grades as $grade)
+                    <option value="{{$grade->id}}">{{$grade->grade_name}}</option>
+                    @endforeach
+                </select>
             </div>
              <div class="mb-5">
              <label for="dob" class="block mb-2 font-bold text-gray-600">Date of birth</label>
-             <input type="date" id="dob" wire:model='dob' placeholder="date of birth" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+             <input type="date" id="dob" wire:model='date_of_birth' placeholder="date of birth" class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
 
             <div class="mb-5">
@@ -105,8 +80,8 @@
             </div>
 
             <div class="mb-5">
-                <label for="bank_name" class="block mb-2 font-bold text-gray-600">Bank Name</label>
-                <input type="text" id="bank_name" wire:model='bank_name' placeholder="Bank name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                <label for="bank_no" class="block mb-2 font-bold text-gray-600">Bank Name</label>
+                <input type="text" id="bank_no" wire:model='bank_no' placeholder="Bank name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
 
             <div class="mb-5">
@@ -114,15 +89,6 @@
                 <input type="number" id="account_no" wire:model='account_no' placeholder="Account number " class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
 
-            <div class="mb-5">
-                <label for="grade_id" class="block mb-2 font-bold text-gray-600">Grade id</label>
-                <select class id="grade_id" wire:model='grade_id' placeholder="Grade id " class="border border-gray-300 shadow p-3 w-full rounded mb-">
-                <option>Please select Rank</option>
-            @foreach ($all_ranks as $rank)
-            <option value="{{$rank->id}}">{{$rank->name}}</option>
-            @endforeach
-        </select>
-            </div>
 
             <div class="mb-5">
                 <label for="nagrik_lagani_kosh_no" class="block mb-2 font-bold text-gray-600">Nagrik lagani kosh Number</label>
@@ -139,12 +105,5 @@
       </div>
     </div>
   </div>
-<<<<<<< HEAD
 </center>
-<<<<<<< HEAD
-=======
-
->>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
-      </div>
-=======
->>>>>>> ae9fc1e187eefcec99d0c30978ed3829831af6f6
+</div>
