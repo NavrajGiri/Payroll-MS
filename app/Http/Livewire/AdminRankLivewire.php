@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 use App\Models\Rank;
-
 use Livewire\Component;
 
 class AdminRankLivewire extends Component

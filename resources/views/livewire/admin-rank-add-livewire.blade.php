@@ -7,7 +7,7 @@
 
           <div class="mb-5">
             <label for="rank" class="block mb-2 font-bold text-gray-600"> Rank </label>
-            <input type="text" id="rank" wire:model='rank' placeholder="rank " class="border border-gray-300 shadow p-3 w-full rounded mb-">
+            <input type="text" id="rank" wire:model='name' placeholder="rank " class="border border-gray-300 shadow p-3 w-full rounded mb-">
           </div>
 
           <div class="flex items-center justify-between">

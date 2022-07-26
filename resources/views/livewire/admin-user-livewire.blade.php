@@ -9,10 +9,10 @@
         </a></div>
 </div>
     </x-slot>
-    <input wire:model="keyword">
+    <input wire:model="keyword" placeholder="search">
     <div class="overflow-x-center">
         <div class="flex">
-            <div class="w-full lg:w-5/6 ">
+            <div class="w-full ">
                 <div class="bg-lightblue rounded my-6">
                     <table class="min-w-max w-full table-center">
                         <thead>
