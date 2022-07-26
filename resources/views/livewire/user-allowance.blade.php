@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard - Admin Dashboard</title>
+  <title>Dashboard - User Dashboard</title>
 
   <!-- Tailwind is included -->
   <link rel="stylesheet" href="css/main.css?v=1628755089081">
@@ -71,62 +71,24 @@
             <i class="mdi mdi-chevron-down"></i>
           </span>
         </a>
-        <div class="navbar-dropdown">
-          <a href="profile.html" class="navbar-item">
-            <span class="icon"><i class="mdi mdi-account"></i></span>
-            <span>My Profile</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-settings"></i></span>
-            <span>Settings</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-email"></i></span>
-            <span>Messages</span>
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-logout"></i></span>
-            <span>Log Out</span>
-          </a>
-        </div>
+
       </div>
       <div class="navbar-item dropdown has-divider has-user-avatar">
         <a class="navbar-link">
           <div class="user-avatar">
-            <img src="image/sts logo.jpg" alt="John Doe" class="rounded-full">
+            <img src="image/sts logo.jpg" alt="sts logo" class="rounded-full">
           </div>
-          <div class="is-user-name"><span>Admin</span></div>
+          <div class="is-user-name"><span>User</span></div>
           <span class="image/logo.png"><i class="mdi mdi-chevron-down"></i></span>
         </a>
         <div class="navbar-dropdown">
-          <a href="profile.html" class="navbar-item">
-            <span class="icon"><i class="mdi mdi-account"></i></span>
-            <span>My Profile</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-settings"></i></span>
-            <span>Settings</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-email"></i></span>
-            <span>Messages</span>
-          </a>
-          <hr class="navbar-divider">
           <a class="navbar-item">
             <span class="icon"><i class="mdi mdi-logout"></i></span>
             <span>Log Out</span>
           </a>
         </div>
       </div>
-      <a href="https://justboil.me/tailwind-admin-templates" class="navbar-item has-divider desktop-icon-only">
-        <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
-        <span>About</span>
-      </a>
-      <a href="https://github.com/justboil/admin-one-tailwind" class="navbar-item has-divider desktop-icon-only">
-        <span class="icon"><i class="mdi mdi-github-circle"></i></span>
-        <span>GitHub</span>
-      </a>
+     
       <a title="Log out" class="navbar-item desktop-icon-only">
         <span class="icon"><i class="mdi mdi-logout"></i></span>
         <span>Log out</span>
@@ -194,18 +156,9 @@
 <section class="is-title-bar">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <ul>
-      <li>Admin</li>
-      <li>Dashboard</li>
+      <li>User</li>
+      <li>Allowance</li>
     </ul>
-  </div>
-</section>
-
-<section class="is-hero-bar">
-  <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-    <h1 class="title">
-      Dashboard
-    </h1>
-    <button class="button light">Button</button>
   </div>
 </section>
 <div>
