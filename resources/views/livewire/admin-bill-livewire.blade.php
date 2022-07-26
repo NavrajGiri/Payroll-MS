@@ -9,17 +9,11 @@
     </x-slot>
     <div class="overflow-x-auto">
         <div class="flex">
-<<<<<<< HEAD
-<<<<<<< HEAD
             <div class="w-full lg:w-9/12">
                 <div class="bg-white shadow-md rounded my-6">
-=======
             <div class="w-full lg:w-5/6">
-=======
             <div class="w-full ">
->>>>>>> ae9fc1e187eefcec99d0c30978ed3829831af6f6
                 <div class="bg-white shadow-full rounded my-6">
->>>>>>> 76bde4609de30334cdab40f9e37a2136dffd7ad7
                     <table class="min-w-max w-full table-center text center">
                         <thead>
                             <tr class="bg-green-500 text-gray-600 uppercase text-sm leading-normal">
