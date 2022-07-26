@@ -2,16 +2,17 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <div>
-            <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">User</button>
+           User
             </div>
             <div><a href="{{route('admin.user.add')}}" >
                 <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Add User</button>
         </a></div>
 </div>
     </x-slot>
+    <input wire:model="keyword" placeholder="search">
     <div class="overflow-x-center">
         <div class="flex">
-            <div class="w-full lg:w-5/6 ">
+            <div class="w-full ">
                 <div class="bg-lightblue rounded my-6">
                     <table class="min-w-max w-full table-center">
                         <thead>

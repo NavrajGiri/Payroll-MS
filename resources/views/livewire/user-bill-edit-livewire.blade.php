@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <div>
-                <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">USER Bill</button>
+               User Bill
             </div>
             <div><a href="{{route('user.bill')}}" >
                 <button type="button" class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">All USER Bill</button>
@@ -43,22 +43,14 @@
                     <input type="number" id=" total_amount" wire:model='total_amount' placeholder=" Total Amount " class="border border-gray-300 shadow p-3 w-full rounded mb-">
 
                   </div>
-                <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                                      Issued salary Id
-                 </label>
-                 <select wire:model="issued-salary_id">
-                <option>Please select Issued Salary Id</option>
-                       @foreach ($all_issuedsalary as $issuedsalary)
-                    <option value="{{$issuedsalary->id}}">{{$issuedsalary->name}}
-                    </option>
-                                      @endforeach
-                                  </select>
-                                  </div>
 
 
-                  <center> <input type="button" value="Update" wire:click='save()'></center>
+                  <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" value="update" wire:click='save()' value="save!">
+                      save
+                    </button>
 
+                  </div>
                 </form>
               </div>
             </div>

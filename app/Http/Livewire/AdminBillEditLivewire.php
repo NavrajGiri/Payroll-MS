@@ -10,6 +10,7 @@ class AdminBillEditLivewire extends Component
 {
 
     public $bill_id, $bill_no, $user_id, $product_name,$product_details,$quantity,$amount,$issued_salary_id,$total_amount;
+
     public function mount($bill_id){
         $this->bill_id = $bill_id;
         $bill = Bill::find($bill_id);
@@ -21,6 +22,7 @@ class AdminBillEditLivewire extends Component
         $this->amount = $bill ->amount;
         $this->issued_salary_id = $bill->issued_salary_id;
         $this->total_amount = $bill->total_amount;
+
 
     }
 

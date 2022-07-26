@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-blue border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -15,7 +15,6 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Home') }}
                     </x-jet-nav-link>
-
                     <x-jet-nav-link href="{{ route('admin.user') }}">
                         {{ __('Users') }}
                     </x-jet-nav-link>
@@ -34,7 +33,6 @@
                     <x-jet-nav-link href="{{ route('admin.issuedsalary') }}">
                         {{ __('Issued Salary') }}
                     </x-jet-nav-link>
-
                     <x-jet-nav-link href="{{ route('user.bill') }}">
                         {{ __('UserBill') }}
                     </x-jet-nav-link>
@@ -46,7 +44,7 @@
                     </x-jet-nav-link>
 
 
-                    {{-- <img src="{{ asset('image/sts logo.jpg') }}" class="rounded h-14 w-auto" > --}}
+
 
                 </div>
             </div>

@@ -9,7 +9,8 @@ class UserAllowance extends Component
 {
     public function render()
     {
-        $all_allowance = Allowance::where('user_id',auth()->user()->id);
+        $all_allowance = Allowance::where('user_id',auth()->user()->id)->get();
         return view('livewire.user-allowance',['all_allowance'=>$all_allowance]);
     }
 }
+
