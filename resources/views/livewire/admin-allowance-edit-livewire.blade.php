@@ -47,17 +47,15 @@
              <label for="amount" class="block mb-2 font-bold text-gray-600"> Amount</label>
              <input type="number" id="amount" wire:model='amount' placeholder="Amount" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
              <div class="mb-5">
+
                  <label for="Total" class="block mb-2 font-bold text-gray-600"> Total</label>
                  <input type="number" id="total" wire:model='total' placeholder="total" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
 
-
-             <div class="mb-5">
-                     <label for="issued_salary_id" class="block mb-2 font-bold text-gray-600"> issued_salary_id</label>
-                     <input type="number" id="issued_salary_id" wire:model='issued_salary_id' placeholder="issued_salary_id" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div>
              <div class="mb-5">
              <label for="issue_date" class="block mb-2 font-bold text-gray-600">Issue date </label>
              <input type="date" id="issue date" wire:model='issue_date' placeholder="issued date" class="border border-gray-300 shadow p-3 w-full rounded mb-">
              </div>
+
 
 
           <div class="flex items-center justify-between">

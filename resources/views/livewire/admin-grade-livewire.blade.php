@@ -20,7 +20,7 @@
                             <tr class="bg-green-500 text-gray-600 uppercase text-sm leading-normal">
                                 <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">Rank</th>
-                                <th class="py-3 px-6 text-center">Grade Name</th>
+                                <th class="py-3 px-6 text-center">Grade Number</th>
                                 <th class="py-3 px-6 text-center">Salary Amount</th>
                                  <th class="py-3 px-6 text-center">Actions</th>
                             </tr>

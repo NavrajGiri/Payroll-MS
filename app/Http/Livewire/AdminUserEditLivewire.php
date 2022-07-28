@@ -24,6 +24,7 @@ class AdminUserEditLivewire extends Component
         $this->joining_date = $user->joining_date;
         $this->blood_group = $user->blood_group;
         $this->pan_no = $user->pan_no;
+        $this->bank_no = $user->bank_no;
         $this->account_no = $user->account_no;
         $this->grade_id = $user->grade_id;
         $this->nagrik_lagani_kosh_no= $user->nagrik_lagani_kosh_no;
@@ -56,8 +57,8 @@ class AdminUserEditLivewire extends Component
     }
     public function render()
     {
-         $all_ranks = Rank::all();
-        $all_grades = Grade::all();
+        $all_ranks = Rank::all();
+        $all_grades = Grade::where('rank_id',$this->rank)->get();
         return view('livewire.admin-user-edit-livewire',[
             'all_ranks'=>$all_ranks,
             'all_grades'=>$all_grades,
