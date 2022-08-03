@@ -23,8 +23,7 @@
             @foreach ($all_users as $user)
                 <option value="{{$user->id}}">{{$user->name}}</option>
             @endforeach
-        </select>
-     </center>
+        </select></center>
 
            </div>
 
@@ -39,7 +38,8 @@
                  <option value="">select type</option>
                  <option value="">credit</option>
                  <option value="">debit</option>
-              </select></center>
+              </select>
+              </center>
              {{-- <input type="text" id="allowance_type" wire:model='allowance_type' placeholder="Allowance Type" class="border border-gray-300 shadow p-3 w-full rounded mb-"> </div> --}}
 
 

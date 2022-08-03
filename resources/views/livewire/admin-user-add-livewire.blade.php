@@ -11,8 +11,8 @@
                 <input type="text" id="name" wire:model='name' placeholder="Name" class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
             <div class="mb-5">
-                <label for="email" class="block mb-2 font-bold text-gray-600">email</label>
-                <input type="text" id="email" wire:model='email' placeholder="email" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                <label for="email" class="block mb-2 font-bold text-gray-600">Email</label>
+                <input type="text" id="email" wire:model='email' placeholder="Email" class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
 
                  <div class="mb-5">
@@ -21,8 +21,8 @@
             </div>
 
              <div class="mb-5">
-                 <label for="computer_no" class="block mb-2 font-bold text-gray-600"> computer_no</label>
-                 <input type="number" id="computer_no" wire:model='computer_no' placeholder="Computer no" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+                 <label for="computer_no" class="block mb-2 font-bold text-gray-600"> Computer No</label>
+                 <input type="number" id="computer_no" wire:model='computer_no' placeholder="Computer No" class="border border-gray-300 shadow p-3 w-full rounded mb-">
                 </div>
 
 
@@ -39,7 +39,7 @@
             <div class="mb-5">
                 <label for="grade_id" class="block mb-2 font-bold text-gray-600">Grade id</label>
                 <select class id="grade_id" wire:model='grade_id' placeholder="Grade id " class="border border-gray-300 shadow p-3 w-full rounded mb-">
-                <option>Please select Rank</option>
+                <option>Please select grade</option>
                     @foreach ($all_grades as $grade)
                     <option value="{{$grade->id}}">{{$grade->grade_name}}</option>
                     @endforeach
